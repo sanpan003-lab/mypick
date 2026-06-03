@@ -1,0 +1,14 @@
+{
+  "name": "My Pick - Forager's Map",
+  "short_name": "My Pick",
+  "description": "Your personal foraging map. Save your favourite trees and track the seasons.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf7",
+  "theme_color": "#0a3610",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

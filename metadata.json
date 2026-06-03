@@ -1,0 +1,8 @@
+{
+  "name": "My Pick",
+  "description": "The ultimate urban foraging companion. Find, identify, and track your favorite fruit trees.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

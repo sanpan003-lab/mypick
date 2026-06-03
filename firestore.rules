@@ -1,0 +1,179 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: userId (uid)
+    // Fields:
+    //   - displayName: string (optional)
+    //   - email: string (required, email format)
+    //   - photoURL: string (optional, url format)
+    //   - role: string (required, 'user' or 'admin')
+    //
+    // Collection: pins
+    // Document ID: pinId
+    // Fields:
+    //   - uid: string (required, owner uid)
+    //   - lat: number (required)
+    //   - lng: number (required)
+    //   - type: string (required)
+    //   - variety: string (optional)
+    //   - notes: string (optional)
+    //   - dateAdded: string (required, date-time format)
+    //
+    // Collection: notes
+    // Document ID: noteId
+    // Fields:
+    //   - uid: string (required, owner uid)
+    //   - date: string (required, date-time format)
+    //   - title: string (required)
+    //   - content: string (required)
+    //   - photos: list (optional)
+    //   - mood: string (optional)
+    //   - phenologyEvents: list (optional)
+    //   - weather: map (optional)
+    //   - harvest: map (optional)
+    //
+    // Collection: picks
+    // Document ID: pickId
+    // Fields:
+    //   - uid: string (required, owner uid)
+    //   - treeName: string (required)
+    //   - lat: number (required)
+    //   - lng: number (required)
+    //   - address: string (optional)
+    //   - notes: string (optional)
+    //   - photoUrl: string (optional)
+    //   - timestamp: string (required, date-time format)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isDocOwner() {
+      return isAuthenticated() && request.auth.uid == resource.data.uid;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "sanpan003@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function isValidEmail(email) {
+      return email is string &&
+        email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function isValidUrl(url) {
+      return url is string &&
+        (url.matches("^https://.*") || url.matches("^http://.*"));
+    }
+
+    function isValidDateString(dateStr) {
+      return dateStr is string &&
+        dateStr.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.*Z?$");
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['displayName', 'email', 'photoURL', 'role']) &&
+             data.email is string && isValidEmail(data.email) &&
+             data.role in ['user', 'admin'] &&
+             (data.displayName == null || (data.displayName is string && data.displayName.size() < 100)) &&
+             (data.photoURL == null || isValidUrl(data.photoURL));
+    }
+
+    function isValidPin(data) {
+      return hasOnlyAllowedFields(['uid', 'lat', 'lng', 'type', 'variety', 'notes', 'dateAdded']) &&
+             data.keys().hasAll(['uid', 'lat', 'lng', 'type', 'dateAdded']) &&
+             data.uid == request.auth.uid &&
+             data.lat is number && data.lng is number &&
+             data.type is string && data.type.size() > 0 && data.type.size() < 50 &&
+             isValidDateString(data.dateAdded) &&
+             (!('variety' in data) || data.variety == null || (data.variety is string && data.variety.size() < 100)) &&
+             (!('notes' in data) || data.notes == null || (data.notes is string && data.notes.size() < 1000));
+    }
+
+    function isValidNote(data) {
+      return hasOnlyAllowedFields(['uid', 'date', 'title', 'content', 'photos', 'mood', 'phenologyEvents', 'weather', 'harvest']) &&
+             data.keys().hasAll(['uid', 'date', 'title', 'content']) &&
+             data.uid == request.auth.uid &&
+             isValidDateString(data.date) &&
+             data.title is string && data.title.size() > 0 && data.title.size() < 200 &&
+             data.content is string && data.content.size() > 0 && data.content.size() < 5000 &&
+             (!('photos' in data) || data.photos == null || data.photos is list) &&
+             (!('mood' in data) || data.mood == null || data.mood is string) &&
+             (!('phenologyEvents' in data) || data.phenologyEvents == null || data.phenologyEvents is list) &&
+             (!('weather' in data) || data.weather == null || data.weather is map) &&
+             (!('harvest' in data) || data.harvest == null || data.harvest is map);
+    }
+
+    function isValidPick(data) {
+      return hasOnlyAllowedFields(['uid', 'treeName', 'lat', 'lng', 'address', 'locationDescription', 'notes', 'photoUrl', 'timestamp', 'details', 'imageUrls']) &&
+             data.keys().hasAll(['uid', 'treeName', 'lat', 'lng', 'timestamp']) &&
+             data.uid == request.auth.uid &&
+             data.treeName is string && data.treeName.size() > 0 && data.treeName.size() < 200 &&
+             data.lat is number && data.lng is number &&
+             isValidDateString(data.timestamp) &&
+             (!('address' in data) || data.address == null || (data.address is string && data.address.size() < 500)) &&
+             (!('locationDescription' in data) || data.locationDescription == null || (data.locationDescription is string && data.locationDescription.size() < 1000)) &&
+             (!('notes' in data) || data.notes == null || (data.notes is string && data.notes.size() < 5000)) &&
+             (!('photoUrl' in data) || data.photoUrl == null || data.photoUrl == '' || data.photoUrl == 'pending' || isValidUrl(data.photoUrl)) &&
+             (!('details' in data) || data.details == null || data.details is map) &&
+             (!('imageUrls' in data) || data.imageUrls == null || data.imageUrls is list);
+    }
+
+    // ===============================================================
+    // Match Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isOwner(userId) && isValidUser(request.resource.data) && request.resource.data.role == 'user';
+      allow update: if isAuthenticated() && (isOwner(userId) || isAdmin()) && isValidUser(request.resource.data) && 
+                    (isAdmin() || request.resource.data.role == resource.data.role);
+    }
+
+    match /pins/{pinId} {
+      allow read: if isAuthenticated(); // Pins are public to all logged in users
+      allow create: if isAuthenticated() && isValidPin(request.resource.data);
+      allow update: if isAuthenticated() && (isDocOwner() || isAdmin()) && isValidPin(request.resource.data);
+      allow delete: if isAuthenticated() && (isDocOwner() || isAdmin());
+    }
+
+    match /notes/{noteId} {
+      allow read: if isAuthenticated() && (isDocOwner() || isAdmin()); // Notes are private
+      allow create: if isAuthenticated() && isValidNote(request.resource.data);
+      allow update: if isAuthenticated() && (isDocOwner() || isAdmin()) && isValidNote(request.resource.data);
+      allow delete: if isAuthenticated() && (isDocOwner() || isAdmin());
+    }
+
+    match /picks/{pickId} {
+      allow read: if isAuthenticated(); // Any authenticated user can read picks (enables shared links)
+      allow create: if isAuthenticated() && isValidPick(request.resource.data);
+      allow update: if isAuthenticated() && (isDocOwner() || isAdmin()) && isValidPick(request.resource.data);
+      allow delete: if isAuthenticated() && (isDocOwner() || isAdmin());
+    }
+  }
+}

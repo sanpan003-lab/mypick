@@ -1,0 +1,111 @@
+[
+  {
+    "id": "trees_collection",
+    "name": "trees",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "field_common_name",
+        "name": "common_name",
+        "type": "text",
+        "required": true,
+        "options": { "min": 1, "max": 200 }
+      },
+      {
+        "id": "field_scientific_name",
+        "name": "scientific_name",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": 200 }
+      },
+      {
+        "id": "field_lat",
+        "name": "lat",
+        "type": "number",
+        "required": true,
+        "options": { "min": -90, "max": 90, "noDecimal": false }
+      },
+      {
+        "id": "field_lng",
+        "name": "lng",
+        "type": "number",
+        "required": true,
+        "options": { "min": -180, "max": 180, "noDecimal": false }
+      },
+      {
+        "id": "field_address",
+        "name": "address",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": 500 }
+      },
+      {
+        "id": "field_notes",
+        "name": "notes",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": 5000 }
+      },
+      {
+        "id": "field_description",
+        "name": "description",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": 2000 }
+      },
+      {
+        "id": "field_is_public",
+        "name": "is_public",
+        "type": "bool",
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "field_device_uid",
+        "name": "device_uid",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": 100 }
+      },
+      {
+        "id": "field_image_url",
+        "name": "image_url",
+        "type": "text",
+        "required": false,
+        "options": { "min": null, "max": null }
+      },
+      {
+        "id": "field_media_urls",
+        "name": "media_urls",
+        "type": "json",
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "field_details",
+        "name": "details",
+        "type": "json",
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "field_date_added",
+        "name": "date_added",
+        "type": "date",
+        "required": false,
+        "options": { "min": "", "max": "" }
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "device_uid = @request.data.device_uid",
+    "deleteRule": "device_uid = @request.data.device_uid",
+    "indexes": [
+      "CREATE INDEX idx_trees_lat ON trees (lat)",
+      "CREATE INDEX idx_trees_lng ON trees (lng)",
+      "CREATE INDEX idx_trees_device_uid ON trees (device_uid)"
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "entities": {
+    "Pin": {
+      "title": "Pin",
+      "description": "A foraging location on the map.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user ID of the creator." },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "type": { "type": "string" },
+        "variety": { "type": "string" },
+        "notes": { "type": "string" },
+        "dateAdded": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "lat", "lng", "type", "dateAdded"]
+    },
+    "NoteEntry": {
+      "title": "NoteEntry",
+      "description": "A personal foraging note or journal entry.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user ID of the creator." },
+        "date": { "type": "string", "format": "date-time" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "photos": { "type": "array", "items": { "type": "string" } },
+        "mood": { "type": "string" },
+        "phenologyEvents": { "type": "array", "items": { "type": "string" } },
+        "weather": {
+          "type": "object",
+          "properties": {
+            "temp": { "type": "number" },
+            "condition": { "type": "string" }
+          }
+        },
+        "harvest": {
+          "type": "object",
+          "properties": {
+            "amount": { "type": "string" },
+            "item": { "type": "string" }
+          }
+        }
+      },
+      "required": ["uid", "date", "title", "content"]
+    },
+    "User": {
+      "title": "User",
+      "description": "User profile information.",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin"] }
+      },
+      "required": ["email", "role"]
+    },
+    "Pick": {
+      "title": "Pick",
+      "description": "A foraging location saved by the user.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user ID of the creator." },
+        "treeName": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "address": { "type": "string" },
+        "notes": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "treeName", "lat", "lng", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/pins/{pinId}": {
+      "schema": "Pin",
+      "description": "Collection of foraging pins."
+    },
+    "/notes/{noteId}": {
+      "schema": "NoteEntry",
+      "description": "Collection of user foraging notes."
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents."
+    },
+    "/picks/{pickId}": {
+      "schema": "Pick",
+      "description": "Collection of user saved picks."
+    }
+  }
+}

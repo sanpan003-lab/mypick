@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment files (contain secrets — never commit)
+.env
+.env.local
+.env.*.local
+
+# Editor / OS junk
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Misc
+download
+
+# Synology thumbnail folders
+@eaDir/
