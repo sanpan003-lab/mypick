@@ -57,7 +57,7 @@ export function SaveLocationForm({ lat, lng, address, onSave, onCancel }: SaveLo
     try {
       const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       const response = await ai.models.generateContent({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-2.0-flash-lite',
         contents: `You are a botanical expert. Given the common name "${name}", return ONLY a JSON object with these fields:
 {
   "scientificName": "...",

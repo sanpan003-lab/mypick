@@ -1,23 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { 
-  Calendar, 
-  Search, 
-  Plus, 
-  Cloud, 
-  Sun, 
-  Wind, 
-  Droplets, 
-  Thermometer, 
-  ShoppingBag, 
-  Leaf, 
-  Sparkles, 
-  Camera, 
-  X, 
-  Smile, 
-  MapPin, 
-  ChevronRight,
-  ChevronDown
-} from 'lucide-react';
+import { Calendar, Search, Plus, Cloud, Sun, Wind, Droplets, Thermometer, ShoppingBag, Leaf, Sparkles, Camera, X, Smile, MapPin, ChevronRight, ChevronDown, Edit2, Trash2, CloudRain } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { NoteEntry } from './PickMap';
 import { GoogleGenAI } from "@google/genai";
@@ -28,6 +10,7 @@ interface MyNotesProps {
   entries: NoteEntry[];
   onAddEntry: (entry: NoteEntry) => void;
   onDeleteEntry: (id: string) => void;
+  onUpdateEntry?: (entry: NoteEntry) => void;
 }
 
 // Helper component to handle local/remote journal photos
@@ -66,13 +49,14 @@ const MOODS = [
   { icon: <Sparkles size={18} />, label: 'Educational', color: 'text-purple-500 bg-purple-50' },
 ];
 
-export function MyNotes({ entries, onAddEntry, onDeleteEntry }: MyNotesProps) {
+export function MyNotes({ entries, onAddEntry, onDeleteEntry, onUpdateEntry }: MyNotesProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isAddingEntry, setIsAddingEntry] = useState(false);
   const [aiInsight, setAiInsight] = useState<string | null>(null);
   const [isGeneratingInsight, setIsGeneratingInsight] = useState(false);
   const [fullScreenPhotos, setFullScreenPhotos] = useState<string[] | null>(null);
   const [fullScreenPhotoIndex, setFullScreenPhotoIndex] = useState<number | null>(null);
+  const [selectedEntry, setSelectedEntry] = useState<NoteEntry | null>(null);
 
   const filteredEntries = useMemo(() => {
     return entries
@@ -103,7 +87,7 @@ export function MyNotes({ entries, onAddEntry, onDeleteEntry }: MyNotesProps) {
       const recentEntries = entries.slice(0, 5).map(e => `- ${e.date}: ${e.title}. ${e.content}. Harvest: ${e.harvest?.amount || 'none'}`).join('\n');
 
       const response = await ai.models.generateContent({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-2.0-flash-lite',
         contents: `Based on these recent foraging journal entries, provide a "Weekly Summary" and "Season Outlook" in 2-3 short, encouraging sentences. Focus on trends and what to look for next week.
 
         Recent Entries:
@@ -234,16 +218,24 @@ export function MyNotes({ entries, onAddEntry, onDeleteEntry }: MyNotesProps) {
                       </div>
                     )}
 
-                    <div className="p-5 space-y-4">
+                    <div
+                      className="p-5 space-y-4 cursor-pointer"
+                      onClick={() => setSelectedEntry(entry)}
+                    >
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
                           <span className="text-[10px] font-bold text-[#8b6b55] uppercase tracking-wider">
                             {new Date(entry.date).toLocaleDateString(undefined, { weekday: 'long', day: 'numeric' })}
                           </span>
                           {entry.weather && (
-                            <div className="flex items-center gap-1.5 text-[10px] text-gray-500 font-medium">
-                              <Thermometer size={10} />
-                              {entry.weather.temp}° • {entry.weather.condition}
+                            <div className="flex items-center gap-2 bg-[#f4f1e8] border border-[#e8e4d9] rounded-full pl-2 pr-3 py-1.5">
+                              {/Sun|Clear/i.test(entry.weather.condition)
+                                ? <Sun size={16} className="text-amber-500" />
+                                : /Rain|Drizzle|Shower|Thunder/i.test(entry.weather.condition)
+                                  ? <CloudRain size={16} className="text-blue-400" />
+                                  : <Cloud size={16} className="text-gray-400" />}
+                              <span className="text-base font-bold text-[#0a3610] leading-none">{entry.weather.temp}°</span>
+                              <span className="text-[11px] text-gray-500 font-medium leading-none">{entry.weather.condition}</span>
                             </div>
                           )}
                         </div>
@@ -306,6 +298,21 @@ export function MyNotes({ entries, onAddEntry, onDeleteEntry }: MyNotesProps) {
       </AnimatePresence>
 
       <AnimatePresence>
+        {selectedEntry && (
+          <JournalDetailModal
+            entry={selectedEntry}
+            onClose={() => setSelectedEntry(null)}
+            onSave={(updated) => {
+              if (onUpdateEntry) onUpdateEntry(updated);
+              setSelectedEntry(null);
+            }}
+            onDelete={(id) => {
+              onDeleteEntry(id);
+              setSelectedEntry(null);
+            }}
+          />
+        )}
+
         {fullScreenPhotos !== null && fullScreenPhotoIndex !== null && (
           <PhotoGallery 
             photos={fullScreenPhotos} 
@@ -551,5 +558,218 @@ export function NewNoteModal({ onClose, onSave, initialTitle = '' }: NewNoteModa
         </div>
       </motion.div>
     </motion.div>
+  );
+}
+
+
+// ─── Journal Detail / Edit Modal ───────────────────────────────────────────────
+
+export function JournalDetailModal({
+  entry,
+  onClose,
+  onSave,
+  onDelete,
+}: {
+  entry: NoteEntry;
+  onClose: () => void;
+  onSave: (entry: NoteEntry) => void;
+  onDelete: (id: string) => void;
+}) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [content, setContent] = useState(entry.content);
+  const [title, setTitle] = useState(entry.title);
+  const [photos, setPhotos] = useState<string[]>([]);
+  const [photosDirty, setPhotosDirty] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const { getNotePhoto } = await import('../services/localStorageDB');
+      const count = entry.photos?.length || entry.photoCount || 0;
+      const loaded: string[] = [];
+      for (let i = 0; i < count; i++) {
+        const p = await getNotePhoto(entry.id, i);
+        if (p) loaded.push(p);
+      }
+      if (!cancelled) setPhotos(loaded);
+    })();
+    return () => { cancelled = true; };
+  }, [entry.id]);
+
+  const handleAddPhotos = async (files: FileList) => {
+    const toB64 = (f: File) => new Promise<string>((res, rej) => {
+      const r = new FileReader();
+      r.onloadend = () => res(r.result as string);
+      r.onerror = rej;
+      r.readAsDataURL(f);
+    });
+    const added: string[] = [];
+    for (let i = 0; i < files.length; i++) added.push(await toB64(files[i]));
+    setPhotos(prev => [...prev, ...added]);
+    setPhotosDirty(true);
+  };
+
+  const handleRemovePhoto = (idx: number) => {
+    setPhotos(prev => prev.filter((_, i) => i !== idx));
+    setPhotosDirty(true);
+  };
+
+  const handleSave = async () => {
+    const { savePhoto, deletePhotosForId } = await import('../services/localStorageDB');
+    if (photosDirty) {
+      // Re-save the full photo set fresh to avoid index gaps/orphans
+      await deletePhotosForId(`note_${entry.id}`);
+      for (let i = 0; i < photos.length; i++) {
+        await savePhoto(`note_${entry.id}_${i}`, photos[i]);
+      }
+    }
+    onSave({
+      ...entry,
+      title: title.trim() || entry.title,
+      content,
+      photos: photos.map((_, i) => `note_${entry.id}_${i}`),
+      photoCount: photos.length,
+    });
+  };
+
+  const dateStr = new Date(entry.date).toLocaleDateString(undefined, {
+    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric',
+  });
+  const timeStr = new Date(entry.date).toLocaleTimeString(undefined, {
+    hour: 'numeric', minute: '2-digit',
+  });
+
+  return (
+    <div className="fixed inset-0 z-[200] bg-black/50 backdrop-blur-sm flex items-end sm:items-center justify-center">
+      <div className="bg-[#fdfbf7] w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[90vh] overflow-y-auto shadow-xl">
+        {/* Header */}
+        <div className="sticky top-0 bg-[#fdfbf7]/95 backdrop-blur-md px-6 pt-6 pb-4 flex justify-between items-center border-b border-[#e8e4d9] z-10">
+          <button onClick={onClose} className="text-sm font-bold text-[#0a3610] uppercase tracking-wider">Close</button>
+          <div className="flex gap-2">
+            {!isEditing && (
+              <button
+                onClick={() => setIsEditing(true)}
+                className="flex items-center gap-1.5 text-xs font-bold text-[#0a3610] bg-[#e8e4d9] px-3 py-1.5 rounded-full hover:bg-[#d8d4c9] transition-colors uppercase tracking-wider"
+              >
+                <Edit2 size={12} /> Edit
+              </button>
+            )}
+            <button
+              onClick={() => onDelete(entry.id)}
+              className="flex items-center gap-1.5 text-xs font-bold text-red-600 bg-red-50 px-3 py-1.5 rounded-full hover:bg-red-100 transition-colors uppercase tracking-wider"
+            >
+              <Trash2 size={12} /> Delete
+            </button>
+          </div>
+        </div>
+
+        <div className="px-6 py-5 space-y-5">
+          {/* Date + weather */}
+          <div className="flex items-center justify-between flex-wrap gap-3">
+            <div className="text-[11px] font-bold text-[#8b6b55] uppercase tracking-widest">
+              {dateStr} · {timeStr}
+            </div>
+            {entry.weather && (
+              <div className="flex items-center gap-2 bg-[#f4f1e8] border border-[#e8e4d9] rounded-full pl-2.5 pr-4 py-2">
+                {/Sun|Clear/i.test(entry.weather.condition)
+                  ? <Sun size={20} className="text-amber-500" />
+                  : /Rain|Drizzle|Shower|Thunder/i.test(entry.weather.condition)
+                    ? <CloudRain size={20} className="text-blue-400" />
+                    : <Cloud size={20} className="text-gray-400" />}
+                <span className="text-xl font-bold text-[#0a3610] leading-none">{entry.weather.temp}°</span>
+                <span className="text-xs text-gray-500 font-medium">{entry.weather.condition}</span>
+              </div>
+            )}
+          </div>
+
+          {/* Title */}
+          {isEditing ? (
+            <input
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              className="w-full font-serif italic text-2xl text-[#0a3610] bg-white border border-[#e8e4d9] rounded-xl px-4 py-2 focus:outline-none focus:border-[#8b6b55]"
+            />
+          ) : (
+            <h3 className="font-serif italic text-3xl text-[#0a3610] leading-tight">{entry.title}</h3>
+          )}
+
+          {/* Photos */}
+          <div className="flex gap-2 overflow-x-auto pb-1 flex-wrap">
+            {photos.map((src, i) => (
+              <div key={i} className="relative w-24 h-24 shrink-0">
+                <img src={src} alt="" className="w-full h-full object-cover rounded-2xl" />
+                {isEditing && (
+                  <button
+                    type="button"
+                    onClick={() => handleRemovePhoto(i)}
+                    className="absolute -top-1.5 -right-1.5 bg-white rounded-full text-red-600 shadow-sm hover:bg-red-50 p-0.5"
+                  >
+                    <X size={14} />
+                  </button>
+                )}
+              </div>
+            ))}
+            {isEditing && (
+              <label className="w-24 h-24 rounded-2xl border-2 border-dashed border-[#e8e4d9] flex flex-col items-center justify-center text-[#8b6b55] cursor-pointer hover:bg-[#f4f1e8] transition-colors shrink-0">
+                <Camera size={18} />
+                <span className="text-[9px] font-bold mt-1 uppercase tracking-wider">Add</span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={e => { if (e.target.files) handleAddPhotos(e.target.files); e.target.value=''; }}
+                />
+              </label>
+            )}
+          </div>
+
+          {/* Content */}
+          {isEditing ? (
+            <textarea
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+              className="w-full min-h-[180px] bg-white border border-[#e8e4d9] rounded-2xl px-4 py-3 text-sm text-[#0a3610] leading-relaxed focus:outline-none focus:border-[#8b6b55]"
+              placeholder="Drop your thoughts here…"
+            />
+          ) : (
+            <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{entry.content}</p>
+          )}
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {entry.phenologyEvents?.map((ev, i) => (
+              <div key={i} className="flex items-center gap-1.5 bg-amber-50 text-amber-700 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                <Leaf size={10} /> {ev}
+              </div>
+            ))}
+            {entry.mood && (
+              <div className="flex items-center gap-1.5 bg-gray-50 text-gray-600 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                {entry.mood}
+              </div>
+            )}
+          </div>
+
+          {/* Save / Cancel when editing */}
+          {isEditing && (
+            <div className="flex justify-end gap-3 pt-2 pb-4">
+              <button
+                onClick={() => { setContent(entry.content); setTitle(entry.title); setIsEditing(false); }}
+                className="px-5 py-2.5 rounded-xl text-[#8b6b55] font-medium hover:bg-[#f4f1e8] transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSave}
+                className="px-6 py-2.5 bg-[#0a3610] text-white rounded-xl font-medium hover:bg-[#052e16] transition-colors shadow-sm"
+              >
+                Save Changes
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }

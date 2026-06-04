@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { getAllPickVideos, getAllPickPhotos } from '../services/localStorageDB';
 import { MediaGallery, buildMediaItems, generateVideoThumbnail } from './PhotoGallery';
 import { PhotoGallery } from './PhotoGallery';
-import { NewNoteModal, NoteImage } from './MyNotes';
+import { NewNoteModal, NoteImage, JournalDetailModal } from './MyNotes';
 import { publishTree, unpublishTree } from '../services/communityPins';
 import type { TreeDetails } from '../types/trees';
 import { GoogleGenAI } from '@google/genai';
@@ -19,6 +19,8 @@ interface TreeProfileProps {
   onAddJournalEntry?: (entry: NoteEntry) => void;
   onUploadPhoto?: (file: File) => Promise<string>;
   journalEntries?: NoteEntry[];
+  onUpdateJournalEntry?: (entry: NoteEntry) => void;
+  onDeleteJournalEntry?: (id: string) => void;
   onCloneTree?: (pin: Pin) => Promise<void>;
   isSharedView?: boolean;
   currentUserId?: string;
@@ -144,7 +146,7 @@ function MediaStrip({ photos, videos, activePhotoIndex, onSelectPhoto, onSelectV
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
-export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTree, onAddJournalEntry, onUploadPhoto, journalEntries = [], onCloneTree, currentUserId = 'local' }: TreeProfileProps) {
+export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTree, onAddJournalEntry, onUpdateJournalEntry, onDeleteJournalEntry, onUploadPhoto, journalEntries = [], onCloneTree, currentUserId = 'local' }: TreeProfileProps) {
   const { details, imageUrl, imageUrls, address, locationDescription, notes, dateAdded } = pin;
 
   const [localUrls, setLocalUrls] = useState<string[]>([]);
@@ -161,6 +163,7 @@ export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTre
   const [isCloning, setIsCloning] = useState(false);
   const [cloneSuccess, setCloneSuccess] = useState(false);
   const cameraInputRef = useRef<HTMLInputElement>(null);
+  const [selectedJournalEntry, setSelectedJournalEntry] = useState<NoteEntry | null>(null);
   const [isAiLoading, setIsAiLoading] = useState(false);
 
   const handleAiLookup = async () => {
@@ -170,7 +173,7 @@ export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTre
     try {
       const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       const response = await ai.models.generateContent({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-2.0-flash-lite',
         contents: `You are a botanical expert. Given the common name "${name}", return ONLY a JSON object with these fields:
 {
   "scientificName": "...",
@@ -607,7 +610,7 @@ Return only valid JSON, no markdown, no explanation.`,
                 {journalEntries.length > 0 ? (
                   <div className="space-y-4">
                     {[...journalEntries].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map(entry => (
-                      <div key={entry.id} className="bg-white border border-[#e8e4d9] rounded-3xl p-5 shadow-sm space-y-3">
+                      <div key={entry.id} onClick={() => setSelectedJournalEntry(entry)} className="bg-white border border-[#e8e4d9] rounded-3xl p-5 shadow-sm space-y-3 cursor-pointer hover:shadow-md transition-shadow">
                         <div className="flex justify-between items-start">
                           <h3 className="font-serif italic text-xl text-[#0a3610]">{entry.title}</h3>
                           <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{new Date(entry.date).toLocaleDateString()}</span>
@@ -639,6 +642,16 @@ Return only valid JSON, no markdown, no explanation.`,
           onClose={() => setShowNewNote(false)}
           onSave={entry => { onAddJournalEntry({ ...entry, treeId: pin.id }); setShowNewNote(false); }}
           initialTitle={`Update on ${details.commonName}`}
+        />
+      )}
+
+      {/* Journal entry detail / edit */}
+      {selectedJournalEntry && (
+        <JournalDetailModal
+          entry={selectedJournalEntry}
+          onClose={() => setSelectedJournalEntry(null)}
+          onSave={(updated) => { if (onUpdateJournalEntry) onUpdateJournalEntry(updated); setSelectedJournalEntry(null); }}
+          onDelete={(id) => { if (onDeleteJournalEntry) onDeleteJournalEntry(id); setSelectedJournalEntry(null); }}
         />
       )}
 

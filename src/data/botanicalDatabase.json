@@ -11,7 +11,12 @@
     "texture": "Firm and crunchy with juicy flesh.",
     "climateConditions": "Needs cold winters for dormancy and cool, dry summers for best fruit quality.",
     "growingTips": "Requires cross-pollination from a compatible variety. Prune in late winter to encourage fruiting spurs.",
-    "healthBenefits": ["High in dietary fibre", "Rich in Vitamin C", "Contains quercetin antioxidants", "Supports gut health"]
+    "healthBenefits": [
+      "High in dietary fibre",
+      "Rich in Vitamin C",
+      "Contains quercetin antioxidants",
+      "Supports gut health"
+    ]
   },
   {
     "id": "crab-apple",
@@ -25,7 +30,12 @@
     "texture": "Very firm and dense with minimal juice raw.",
     "climateConditions": "Hardy and adaptable; tolerates poor soils and exposed sites.",
     "growingTips": "Plant near domestic apple varieties to boost cross-pollination. Excellent wildlife tree.",
-    "healthBenefits": ["High in pectin for heart health", "Rich in Vitamin C", "Anti-inflammatory polyphenols", "Supports immune function"]
+    "healthBenefits": [
+      "High in pectin for heart health",
+      "Rich in Vitamin C",
+      "Anti-inflammatory polyphenols",
+      "Supports immune function"
+    ]
   },
   {
     "id": "pear",
@@ -39,7 +49,12 @@
     "texture": "Silky and melting with a slightly grainy core near the seeds.",
     "climateConditions": "Prefers deep, well-drained loam; sensitive to late frosts when in blossom.",
     "growingTips": "Harvest while still firm; ripen at room temperature. Needs cross-pollinator from same pollination group.",
-    "healthBenefits": ["Excellent source of fibre", "Rich in Vitamin C and K", "Contains boron for bone health", "Low glycaemic index"]
+    "healthBenefits": [
+      "Excellent source of fibre",
+      "Rich in Vitamin C and K",
+      "Contains boron for bone health",
+      "Low glycaemic index"
+    ]
   },
   {
     "id": "asian-pear",
@@ -53,7 +68,12 @@
     "texture": "Crunchy and exceptionally juicy; apple-like in firmness.",
     "climateConditions": "Tolerates more summer heat than European pear; needs adequate chill hours.",
     "growingTips": "Thin fruit aggressively — one fruit per spur — for best size and flavour.",
-    "healthBenefits": ["High water content for hydration", "Good source of dietary fibre", "Contains folate", "Rich in Vitamin C"]
+    "healthBenefits": [
+      "High water content for hydration",
+      "Good source of dietary fibre",
+      "Contains folate",
+      "Rich in Vitamin C"
+    ]
   },
   {
     "id": "quince",
@@ -67,7 +87,12 @@
     "texture": "Rock-hard raw; becomes tender and jammy after long cooking.",
     "climateConditions": "Tolerates heavier, wetter soils than most fruit trees. Needs full sun.",
     "growingTips": "Self-fertile. Harvest after first frost for best flavour. Needs minimal pruning once established.",
-    "healthBenefits": ["High in pectin for digestion", "Rich in Vitamin C", "Anti-inflammatory compounds", "Contains copper and iron"]
+    "healthBenefits": [
+      "High in pectin for digestion",
+      "Rich in Vitamin C",
+      "Anti-inflammatory compounds",
+      "Contains copper and iron"
+    ]
   },
   {
     "id": "sweet-cherry",
@@ -81,7 +106,12 @@
     "texture": "Firm and juicy with a smooth, snapping skin.",
     "climateConditions": "Needs cold winters and dry summers; wet weather at harvest causes splitting.",
     "growingTips": "Net trees before ripening to beat birds. Grow on dwarfing rootstock for easier harvesting.",
-    "healthBenefits": ["Rich in anthocyanins", "Anti-inflammatory", "Contains melatonin for sleep", "Good source of Vitamin C"]
+    "healthBenefits": [
+      "Rich in anthocyanins",
+      "Anti-inflammatory",
+      "Contains melatonin for sleep",
+      "Good source of Vitamin C"
+    ]
   },
   {
     "id": "sour-cherry",
@@ -95,7 +125,12 @@
     "texture": "Soft and very juicy with thin skin.",
     "climateConditions": "Very cold-hardy; tolerates partial shade better than sweet cherries.",
     "growingTips": "Self-fertile — plant even one tree for a harvest. Prune to maintain an open centre for air circulation.",
-    "healthBenefits": ["Very high in anthocyanins", "Reduces muscle soreness", "Anti-inflammatory", "Supports cardiovascular health"]
+    "healthBenefits": [
+      "Very high in anthocyanins",
+      "Reduces muscle soreness",
+      "Anti-inflammatory",
+      "Supports cardiovascular health"
+    ]
   },
   {
     "id": "plum",
@@ -109,7 +144,12 @@
     "texture": "Juicy and yielding with a thin, slightly waxy skin.",
     "climateConditions": "Tolerates a range of soils; needs full sun and adequate moisture.",
     "growingTips": "Thin fruit to avoid biennial bearing. Protect blossom from late frosts with fleece.",
-    "healthBenefits": ["High in Vitamin K", "Contains sorbitol for digestive health", "Rich in antioxidants", "Supports bone health"]
+    "healthBenefits": [
+      "High in Vitamin K",
+      "Contains sorbitol for digestive health",
+      "Rich in antioxidants",
+      "Supports bone health"
+    ]
   },
   {
     "id": "japanese-plum",
@@ -123,7 +163,12 @@
     "texture": "Very juicy with firm flesh and a crisp bite when fresh.",
     "climateConditions": "Needs long warm growing seasons; blooms early so late frost is a risk.",
     "growingTips": "Plant with another Japanese plum nearby for cross-pollination. Thin heavily for large fruit.",
-    "healthBenefits": ["High in Vitamin C", "Good source of dietary fibre", "Contains potassium", "Rich in antioxidants"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Good source of dietary fibre",
+      "Contains potassium",
+      "Rich in antioxidants"
+    ]
   },
   {
     "id": "damson",
@@ -137,7 +182,12 @@
     "texture": "Small and firm with dense flesh clinging to the stone.",
     "climateConditions": "Extremely hardy and tolerant of exposed, northerly sites better than most stone fruit.",
     "growingTips": "Largely self-fertile. Prolific bearer — stake young trees to prevent branch breakage under heavy crops.",
-    "healthBenefits": ["High in Vitamin C", "Rich in polyphenols", "Good source of fibre", "Contains iron"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in polyphenols",
+      "Good source of fibre",
+      "Contains iron"
+    ]
   },
   {
     "id": "greengage",
@@ -151,7 +201,12 @@
     "texture": "Soft, juicy, and meltingly tender when fully ripe.",
     "climateConditions": "Needs a warm, sheltered wall in northern climates; ideal in Mediterranean-style summers.",
     "growingTips": "Fan-train against a south-facing wall for best results. Partially self-fertile but benefits from a pollinator.",
-    "healthBenefits": ["High in Vitamin A and C", "Rich in potassium", "Contains antioxidants", "Supports eye health"]
+    "healthBenefits": [
+      "High in Vitamin A and C",
+      "Rich in potassium",
+      "Contains antioxidants",
+      "Supports eye health"
+    ]
   },
   {
     "id": "peach",
@@ -165,7 +220,12 @@
     "texture": "Yielding and juicy with velvet skin and a clear separation from the stone when ripe.",
     "climateConditions": "Needs hot summers and mild winters; protect blossom from frost and leaves from rain to prevent curl.",
     "growingTips": "Fan-train against a warm wall. Spray copper fungicide before bud burst to prevent leaf curl.",
-    "healthBenefits": ["Rich in Vitamin A and C", "Contains potassium", "High in beta-carotene", "Good source of antioxidants"]
+    "healthBenefits": [
+      "Rich in Vitamin A and C",
+      "Contains potassium",
+      "High in beta-carotene",
+      "Good source of antioxidants"
+    ]
   },
   {
     "id": "nectarine",
@@ -179,7 +239,12 @@
     "texture": "Firm and smooth-skinned; less downy and slightly crisper than peach.",
     "climateConditions": "Requires more warmth than peach to ripen well; prone to brown rot in wet summers.",
     "growingTips": "Thin fruits to 15 cm apart for best size. Grow under glass in cool, wet climates.",
-    "healthBenefits": ["Rich in Vitamins A, C, and E", "Contains potassium and magnesium", "High in antioxidants", "Supports skin health"]
+    "healthBenefits": [
+      "Rich in Vitamins A, C, and E",
+      "Contains potassium and magnesium",
+      "High in antioxidants",
+      "Supports skin health"
+    ]
   },
   {
     "id": "apricot",
@@ -193,7 +258,12 @@
     "texture": "Velvety skin with juicy, yielding flesh and a freestone.",
     "climateConditions": "Needs dry summers and cold winters; early blossom is extremely frost-sensitive.",
     "growingTips": "Fan-train against a sheltered south wall. Protect blossom with fleece in early spring.",
-    "healthBenefits": ["Very high in beta-carotene", "Rich in Vitamins A and C", "Contains iron and potassium", "Supports eye health"]
+    "healthBenefits": [
+      "Very high in beta-carotene",
+      "Rich in Vitamins A and C",
+      "Contains iron and potassium",
+      "Supports eye health"
+    ]
   },
   {
     "id": "sloe",
@@ -207,7 +277,12 @@
     "texture": "Firm and dry raw; softens significantly after frost.",
     "climateConditions": "Extremely tough; thrives on exposed chalk downlands and hedgerows.",
     "growingTips": "Harvest after first frost or freeze picked berries overnight to mimic frost's softening effect.",
-    "healthBenefits": ["High in Vitamin C", "Rich in antioxidants", "Anti-inflammatory tannins", "Traditional digestive tonic"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidants",
+      "Anti-inflammatory tannins",
+      "Traditional digestive tonic"
+    ]
   },
   {
     "id": "medlar",
@@ -221,7 +296,12 @@
     "texture": "Grainy and custard-soft when fully bletted; inedible when hard.",
     "climateConditions": "Tolerates heavy, wet soils and exposed sites; extremely cold-hardy once established.",
     "growingTips": "Harvest after first frost and store on straw, open end down, until flesh gives to pressure.",
-    "healthBenefits": ["High in Vitamin C", "Rich in tannins", "Good source of dietary fibre", "Traditional kidney health remedy"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in tannins",
+      "Good source of dietary fibre",
+      "Traditional kidney health remedy"
+    ]
   },
   {
     "id": "loquat",
@@ -235,7 +315,12 @@
     "texture": "Smooth and juicy with a slight firmness; large seeds occupy much of the fruit.",
     "climateConditions": "Evergreen; tolerates light frost to -10°C when established. Prefers mild, humid winters.",
     "growingTips": "Thin clusters to 5–6 fruit for larger size. Self-fertile; a single tree bears well.",
-    "healthBenefits": ["High in Vitamin A", "Contains potassium and manganese", "Anti-inflammatory compounds", "Supports respiratory health"]
+    "healthBenefits": [
+      "High in Vitamin A",
+      "Contains potassium and manganese",
+      "Anti-inflammatory compounds",
+      "Supports respiratory health"
+    ]
   },
   {
     "id": "fig",
@@ -249,7 +334,12 @@
     "texture": "Soft and yielding with a jammy interior filled with tiny seeds; skin is edible.",
     "climateConditions": "Thrives in hot, dry Mediterranean conditions; needs a warm wall in cooler climates.",
     "growingTips": "Restrict roots in a large pot or paved pit to encourage fruiting. Remove embryo figs in autumn.",
-    "healthBenefits": ["High in dietary fibre", "Rich in calcium and magnesium", "Contains Vitamin K", "Supports digestive health"]
+    "healthBenefits": [
+      "High in dietary fibre",
+      "Rich in calcium and magnesium",
+      "Contains Vitamin K",
+      "Supports digestive health"
+    ]
   },
   {
     "id": "mulberry",
@@ -263,7 +353,12 @@
     "texture": "Soft and very juicy; bursts on contact — impossible to transport without bruising.",
     "climateConditions": "Tolerant of urban conditions and varied soils; needs full sun for best flavour.",
     "growingTips": "Spread a sheet below to harvest fruit as it drops. Long-lived tree improves with age.",
-    "healthBenefits": ["Rich in resveratrol", "High in Vitamins C and K", "Contains iron", "Antioxidant anthocyanins"]
+    "healthBenefits": [
+      "Rich in resveratrol",
+      "High in Vitamins C and K",
+      "Contains iron",
+      "Antioxidant anthocyanins"
+    ]
   },
   {
     "id": "persimmon",
@@ -277,7 +372,12 @@
     "texture": "Crisp like an apple (Fuyu) or custard-soft and jelly-like (Hachiya) when ripe.",
     "climateConditions": "Needs hot summers and mild winters; moderate drought tolerance once established.",
     "growingTips": "Do not harvest astringent varieties until fully soft. Fuyu can be eaten firm. Largely self-fertile.",
-    "healthBenefits": ["Very high in Vitamin A", "Rich in Vitamin C and B6", "Contains manganese", "High in antioxidants"]
+    "healthBenefits": [
+      "Very high in Vitamin A",
+      "Rich in Vitamin C and B6",
+      "Contains manganese",
+      "High in antioxidants"
+    ]
   },
   {
     "id": "american-persimmon",
@@ -291,7 +391,12 @@
     "texture": "Mealy and soft when ripe; astringent and dry until fully frosted.",
     "climateConditions": "Native to eastern North America; thrives in well-drained forest soils and tolerates dry spells.",
     "growingTips": "Needs male and female trees for fruit, or select a self-fertile cultivar. Harvest after hard frost.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in Vitamin A", "Contains calcium and iron", "Anti-inflammatory antioxidants"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in Vitamin A",
+      "Contains calcium and iron",
+      "Anti-inflammatory antioxidants"
+    ]
   },
   {
     "id": "pawpaw",
@@ -305,7 +410,12 @@
     "texture": "Soft and custard-like; scoopable directly from the skin like a pudding.",
     "climateConditions": "Native to temperate forest understory; tolerates shade when young but fruits best in full sun.",
     "growingTips": "Plant two genetically distinct trees. Fruit bruises easily and must be eaten within days of harvest.",
-    "healthBenefits": ["High in Vitamins C and A", "Contains iron, magnesium, and zinc", "More protein than most fruit", "Rich in antioxidants"]
+    "healthBenefits": [
+      "High in Vitamins C and A",
+      "Contains iron, magnesium, and zinc",
+      "More protein than most fruit",
+      "Rich in antioxidants"
+    ]
   },
   {
     "id": "elderberry",
@@ -319,7 +429,12 @@
     "texture": "Tiny, juicy, and slightly gritty; seeds noticeable raw.",
     "climateConditions": "Highly adaptable; thrives in moist soils at woodland edges and hedgerows.",
     "growingTips": "Never eat raw — cook berries and discard raw seeds. Prune hard annually to maintain productive young growth.",
-    "healthBenefits": ["Exceptional immune support", "High in Vitamins C and A", "Anti-viral compounds", "Rich in antioxidant flavonoids"]
+    "healthBenefits": [
+      "Exceptional immune support",
+      "High in Vitamins C and A",
+      "Anti-viral compounds",
+      "Rich in antioxidant flavonoids"
+    ]
   },
   {
     "id": "hawthorn",
@@ -333,7 +448,12 @@
     "texture": "Mealy and dry with large seed; not appealing to eat raw.",
     "climateConditions": "Extremely hardy; thrives in any exposure, poor soils, and coastal conditions.",
     "growingTips": "Best used for wildlife habitat and windbreak. Berries are valuable winter food for birds.",
-    "healthBenefits": ["Traditional heart tonic", "Lowers blood pressure", "Rich in flavonoids", "Supports circulation"]
+    "healthBenefits": [
+      "Traditional heart tonic",
+      "Lowers blood pressure",
+      "Rich in flavonoids",
+      "Supports circulation"
+    ]
   },
   {
     "id": "rowan",
@@ -347,7 +467,12 @@
     "texture": "Small, firm, and slightly waxy; densely clustered.",
     "climateConditions": "One of the most cold-hardy fruiting trees; thrives at altitude and in harsh northern climates.",
     "growingTips": "Best harvested after first frost to reduce bitterness. Pair with crab apple in jelly recipes.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in antioxidants", "Parasorbic acid converts to beneficial compounds when cooked", "Traditional sore throat remedy"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in antioxidants",
+      "Parasorbic acid converts to beneficial compounds when cooked",
+      "Traditional sore throat remedy"
+    ]
   },
   {
     "id": "sea-buckthorn",
@@ -361,7 +486,12 @@
     "texture": "Soft and very juicy; bursts with tart juice when pressed.",
     "climateConditions": "Thrives in coastal, windswept sites and sandy soils; nitrogen-fixing roots improve poor soils.",
     "growingTips": "Plant one male to every six female plants. Harvest with gloved hands — thorns and juice stain.",
-    "healthBenefits": ["One of the highest Vitamin C contents of any fruit", "Rich in Omega-7 fatty acids", "High in carotenoids", "Supports skin and mucous membrane health"]
+    "healthBenefits": [
+      "One of the highest Vitamin C contents of any fruit",
+      "Rich in Omega-7 fatty acids",
+      "High in carotenoids",
+      "Supports skin and mucous membrane health"
+    ]
   },
   {
     "id": "gooseberry",
@@ -375,7 +505,12 @@
     "texture": "Firm and crisp with a thin, translucent skin that softens at full ripeness.",
     "climateConditions": "Cool and moist; one of the few fruits that tolerates partial shade and north-facing aspects.",
     "growingTips": "Pick green for cooking in May; leave to ripen fully yellow for dessert use in July–August.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in Vitamin A and E", "Contains folate", "Powerful antioxidant profile"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in Vitamin A and E",
+      "Contains folate",
+      "Powerful antioxidant profile"
+    ]
   },
   {
     "id": "red-currant",
@@ -389,7 +524,12 @@
     "texture": "Tiny, pop-in-the-mouth berries with glossy, translucent skin and many seeds.",
     "climateConditions": "Cool and moist; excellent north-facing wall plant. Dislikes hot, dry summers.",
     "growingTips": "Harvest entire strigs intact with a fork to avoid bruising. Freeze whole for year-round use.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in anthocyanins", "Contains potassium", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in anthocyanins",
+      "Contains potassium",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "blackcurrant",
@@ -403,7 +543,12 @@
     "texture": "Firm skin bursting with intensely flavoured juice; aromatic even before tasting.",
     "climateConditions": "Prefers cooler, moister climates; tolerates frost well but blossom susceptible to late frosts.",
     "growingTips": "Cut one third of oldest stems to the ground each winter to stimulate vigorous new fruiting growth.",
-    "healthBenefits": ["Highest Vitamin C of all common fruits", "GLA (Omega-6) in seed oil", "Anti-viral and anti-bacterial", "Supports eye and brain health"]
+    "healthBenefits": [
+      "Highest Vitamin C of all common fruits",
+      "GLA (Omega-6) in seed oil",
+      "Anti-viral and anti-bacterial",
+      "Supports eye and brain health"
+    ]
   },
   {
     "id": "white-currant",
@@ -417,7 +562,12 @@
     "texture": "Translucent, jewel-like berries; slightly softer and juicier than red currant.",
     "climateConditions": "Same requirements as red currant; excellent in partial shade.",
     "growingTips": "Best eaten fresh; the flavour is too delicate to survive heavy cooking or preserving.",
-    "healthBenefits": ["High in Vitamin C", "Rich in antioxidants", "Contains potassium", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidants",
+      "Contains potassium",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "jostaberry",
@@ -431,7 +581,12 @@
     "texture": "Larger than currant; firm with blackcurrant-like juice.",
     "climateConditions": "Very adaptable and disease-resistant; good choice for organic gardens.",
     "growingTips": "Vigorous grower — give plenty of space. Largely immune to big bud mite and leaf spot.",
-    "healthBenefits": ["High in Vitamin C", "Rich in antioxidants", "Contains potassium and magnesium", "Combines benefits of both parent fruits"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidants",
+      "Contains potassium and magnesium",
+      "Combines benefits of both parent fruits"
+    ]
   },
   {
     "id": "blackberry",
@@ -445,7 +600,12 @@
     "texture": "Soft and juicy with many small drupelets; stains deeply.",
     "climateConditions": "Extremely adaptable; thrives in hedgerows, disturbed ground, and woodland edges.",
     "growingTips": "Tie new canes to wires as they grow; cut fruited canes to the ground after harvest.",
-    "healthBenefits": ["Very high in Vitamin C and K", "Rich in anthocyanins", "High in dietary fibre", "Contains folate and manganese"]
+    "healthBenefits": [
+      "Very high in Vitamin C and K",
+      "Rich in anthocyanins",
+      "High in dietary fibre",
+      "Contains folate and manganese"
+    ]
   },
   {
     "id": "raspberry",
@@ -459,7 +619,12 @@
     "texture": "Extremely soft and fragile; hollow interior filled with tiny drupelets.",
     "climateConditions": "Prefers cool, moist summers; dislikes drought and waterlogged soils.",
     "growingTips": "Autumn-fruiting varieties are easiest — cut all canes to ground in February.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in ellagic acid antioxidants", "High in dietary fibre", "Contains manganese and folate"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in ellagic acid antioxidants",
+      "High in dietary fibre",
+      "Contains manganese and folate"
+    ]
   },
   {
     "id": "strawberry",
@@ -473,7 +638,12 @@
     "texture": "Juicy and yielding; skin is thin and fragile.",
     "climateConditions": "Adaptable to most climates; needs shelter from heavy rain to prevent grey mould at fruiting time.",
     "growingTips": "Tuck straw under developing fruit to keep clean. Replace runners every 3–4 years. Net to protect from birds.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in manganese and folate", "High in antioxidant anthocyanins", "Anti-inflammatory"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in manganese and folate",
+      "High in antioxidant anthocyanins",
+      "Anti-inflammatory"
+    ]
   },
   {
     "id": "blueberry",
@@ -487,7 +657,12 @@
     "texture": "Firm and round with a dusty blue bloom; bursts with juice.",
     "climateConditions": "Requires acidic, moisture-retentive soil; prefers cool, humid summers.",
     "growingTips": "Acidify soil with sulphur chips and ericaceous compost. Pair two different varieties for best yields.",
-    "healthBenefits": ["One of the highest antioxidant fruits", "Supports brain health and memory", "Anti-inflammatory compounds", "Contains Vitamins C and K"]
+    "healthBenefits": [
+      "One of the highest antioxidant fruits",
+      "Supports brain health and memory",
+      "Anti-inflammatory compounds",
+      "Contains Vitamins C and K"
+    ]
   },
   {
     "id": "cranberry",
@@ -501,7 +676,12 @@
     "texture": "Firm and round; bounces when ripe (the traditional float test).",
     "climateConditions": "Native to boggy, acidic northern habitats; requires consistently moist, peaty, acidic soil.",
     "growingTips": "Mulch heavily with acidic pine bark. Excellent in large containers with ericaceous compost.",
-    "healthBenefits": ["Prevents urinary tract infections", "High in Vitamin C", "Rich in proanthocyanidins", "Anti-inflammatory and anti-cancer compounds"]
+    "healthBenefits": [
+      "Prevents urinary tract infections",
+      "High in Vitamin C",
+      "Rich in proanthocyanidins",
+      "Anti-inflammatory and anti-cancer compounds"
+    ]
   },
   {
     "id": "lingonberry",
@@ -515,7 +695,12 @@
     "texture": "Small, firm, and waxy; very juicy when crushed.",
     "climateConditions": "Arctic-hardy native of boreal forests; needs acidic, well-drained soil and cool temperatures.",
     "growingTips": "Excellent groundcover under acid-loving shrubs. Virtually maintenance-free once established.",
-    "healthBenefits": ["High in Vitamins C and E", "Rich in antioxidant anthocyanins", "Antibacterial properties", "Supports urinary health"]
+    "healthBenefits": [
+      "High in Vitamins C and E",
+      "Rich in antioxidant anthocyanins",
+      "Antibacterial properties",
+      "Supports urinary health"
+    ]
   },
   {
     "id": "bilberry",
@@ -529,7 +714,12 @@
     "texture": "Small and soft; stains everything deep purple — including teeth.",
     "climateConditions": "Native to acidic moorland and heath; very difficult to cultivate outside its natural habitat.",
     "growingTips": "Best harvested wild in late summer on upland heathland. Very difficult to grow in gardens.",
-    "healthBenefits": ["Exceptional antioxidant density", "Supports eye health and night vision", "Anti-inflammatory", "High in Vitamin C and manganese"]
+    "healthBenefits": [
+      "Exceptional antioxidant density",
+      "Supports eye health and night vision",
+      "Anti-inflammatory",
+      "High in Vitamin C and manganese"
+    ]
   },
   {
     "id": "honeyberry",
@@ -543,7 +733,12 @@
     "texture": "Elongated and firm; pulp similar to blueberry.",
     "climateConditions": "Extremely cold-hardy Arctic species; actually benefits from very cold winters for best yields.",
     "growingTips": "Plant two varieties with overlapping bloom times for cross-pollination. Among the very first fruits of the year.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in anthocyanins and antioxidants", "Anti-inflammatory compounds", "Supports cardiovascular health"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in anthocyanins and antioxidants",
+      "Anti-inflammatory compounds",
+      "Supports cardiovascular health"
+    ]
   },
   {
     "id": "goji-berry",
@@ -557,7 +752,12 @@
     "texture": "Slightly chewy when fresh; dried berries are raisin-like.",
     "climateConditions": "Drought-tolerant once established; tolerates poor, alkaline soils and coastal conditions.",
     "growingTips": "Train as a standard or allow to scramble. Incredibly productive — one plant yields kilograms of berries.",
-    "healthBenefits": ["Rich in zeaxanthin for eye health", "Very high in Vitamin C", "Contains complete amino acid profile", "Adaptogenic and immune-supporting"]
+    "healthBenefits": [
+      "Rich in zeaxanthin for eye health",
+      "Very high in Vitamin C",
+      "Contains complete amino acid profile",
+      "Adaptogenic and immune-supporting"
+    ]
   },
   {
     "id": "autumn-olive",
@@ -571,7 +771,12 @@
     "texture": "Small and juicy with a soft flesh and one central seed.",
     "climateConditions": "Adaptable nitrogen-fixer; thrives in poor soils. Check invasive status in your region before planting.",
     "growingTips": "Do not plant where invasive (eastern US). Excellent pioneer plant and wildlife food source elsewhere.",
-    "healthBenefits": ["Contains 17× more lycopene than tomatoes", "Rich in Vitamin C and E", "Anti-cancer compounds", "Supports prostate health"]
+    "healthBenefits": [
+      "Contains 17× more lycopene than tomatoes",
+      "Rich in Vitamin C and E",
+      "Anti-cancer compounds",
+      "Supports prostate health"
+    ]
   },
   {
     "id": "cornelian-cherry",
@@ -585,7 +790,12 @@
     "texture": "Firm and slightly astringent raw; olive-like with a long central stone.",
     "climateConditions": "Tough and adaptable; among the first trees to flower in late winter. Tolerates alkaline soils.",
     "growingTips": "Harvest when deep red and beginning to soften. Makes exceptional jam and fruit leather.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in anthocyanins", "Traditional anti-malarial use", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in anthocyanins",
+      "Traditional anti-malarial use",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "walnut",
@@ -599,7 +809,12 @@
     "texture": "Dense and oily; papery skin around kernel adds astringency.",
     "climateConditions": "Needs deep, well-drained soil and full sun; late frost damages new growth — choose a sheltered site.",
     "growingTips": "Allow 10 m between trees and structures. Keep away from vegetable beds due to juglone allelopathy.",
-    "healthBenefits": ["Rich in Omega-3 fatty acids", "Supports brain and heart health", "High in antioxidants", "Contains Vitamin E and magnesium"]
+    "healthBenefits": [
+      "Rich in Omega-3 fatty acids",
+      "Supports brain and heart health",
+      "High in antioxidants",
+      "Contains Vitamin E and magnesium"
+    ]
   },
   {
     "id": "black-walnut",
@@ -613,7 +828,12 @@
     "texture": "Dense and oily; very hard shell requiring a mallet.",
     "climateConditions": "Tough native tree; tolerates poor soils and drought once established.",
     "growingTips": "Extremely difficult to crack — use a vice or dedicated cracker. Strong juglone: avoid near gardens.",
-    "healthBenefits": ["Rich in Omega-3 fatty acids", "High in antioxidants", "Contains juglone with anti-tumour properties", "Rich in magnesium and phosphorus"]
+    "healthBenefits": [
+      "Rich in Omega-3 fatty acids",
+      "High in antioxidants",
+      "Contains juglone with anti-tumour properties",
+      "Rich in magnesium and phosphorus"
+    ]
   },
   {
     "id": "hazelnut",
@@ -627,7 +847,12 @@
     "texture": "Crunchy when dried; tender and almost milky when freshly harvested.",
     "climateConditions": "Hardy and adaptable to most soils; wind-pollinated so no need for insect pollinators.",
     "growingTips": "Plant two or more varieties for cross-pollination. Coppice on rotation to renew productive growth.",
-    "healthBenefits": ["Rich in Vitamin E", "High in healthy monounsaturated fats", "Contains folate and manganese", "Supports heart health"]
+    "healthBenefits": [
+      "Rich in Vitamin E",
+      "High in healthy monounsaturated fats",
+      "Contains folate and manganese",
+      "Supports heart health"
+    ]
   },
   {
     "id": "sweet-chestnut",
@@ -641,7 +866,12 @@
     "texture": "Dense and starchy like potato when raw; becomes soft and floury when cooked.",
     "climateConditions": "Prefers acidic, well-drained sandy or loamy soils; intolerant of chalk and waterlogging.",
     "growingTips": "Plant two or more trees for good cross-pollination. Harvest after spiny cases split and nuts fall.",
-    "healthBenefits": ["High in complex carbohydrates", "Gluten-free nut flour alternative", "Rich in Vitamin C (unique among nuts)", "Contains potassium and manganese"]
+    "healthBenefits": [
+      "High in complex carbohydrates",
+      "Gluten-free nut flour alternative",
+      "Rich in Vitamin C (unique among nuts)",
+      "Contains potassium and manganese"
+    ]
   },
   {
     "id": "almond",
@@ -655,7 +885,12 @@
     "texture": "Crunchy and dense; papery inner skin adds mild astringency.",
     "climateConditions": "Needs long, hot, dry summers and mild winters. Blossom is extremely frost-sensitive.",
     "growingTips": "Train against a warm south wall in cooler climates. Self-fertile varieties (e.g. Robijn) are available.",
-    "healthBenefits": ["Very high in Vitamin E", "Rich in healthy monounsaturated fats", "Supports blood sugar regulation", "High in magnesium and calcium"]
+    "healthBenefits": [
+      "Very high in Vitamin E",
+      "Rich in healthy monounsaturated fats",
+      "Supports blood sugar regulation",
+      "High in magnesium and calcium"
+    ]
   },
   {
     "id": "olive",
@@ -669,7 +904,12 @@
     "texture": "Firm and waxy with an oily flesh around a hard central stone.",
     "climateConditions": "Needs hot, dry Mediterranean summers and cold (but frost-free) winters to initiate flowering.",
     "growingTips": "Shelter from hard frost. Container-grown trees can be brought indoors in winter in colder zones.",
-    "healthBenefits": ["Rich in heart-healthy monounsaturated fats", "Contains Vitamin E and K", "High in squalene antioxidant", "Anti-inflammatory polyphenols"]
+    "healthBenefits": [
+      "Rich in heart-healthy monounsaturated fats",
+      "Contains Vitamin E and K",
+      "High in squalene antioxidant",
+      "Anti-inflammatory polyphenols"
+    ]
   },
   {
     "id": "lemon",
@@ -683,7 +923,12 @@
     "texture": "Juicy and pulpy with a thick, aromatic rind.",
     "climateConditions": "Frost-tender; needs warmth year-round. Ideal for container growing in conservatories.",
     "growingTips": "Feed with citrus fertiliser every two weeks in summer. Re-pot every two years to maintain vigour.",
-    "healthBenefits": ["Very high in Vitamin C", "Contains limonene anti-cancer compound", "Alkalising effect on body", "Supports immune and digestive health"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Contains limonene anti-cancer compound",
+      "Alkalising effect on body",
+      "Supports immune and digestive health"
+    ]
   },
   {
     "id": "orange-sweet",
@@ -697,7 +942,12 @@
     "texture": "Juicy and segmented with an aromatic rind.",
     "climateConditions": "Needs sustained heat and full sun for sugar development; frost-tender.",
     "growingTips": "Grow in large containers (minimum 40 cm pot) and move indoors in autumn in northern climates.",
-    "healthBenefits": ["Very high in Vitamin C", "Contains folate and potassium", "Rich in flavonoids for heart health", "Supports immune function"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Contains folate and potassium",
+      "Rich in flavonoids for heart health",
+      "Supports immune function"
+    ]
   },
   {
     "id": "blood-orange",
@@ -711,7 +961,12 @@
     "texture": "Standard orange texture; the dramatic pigmentation is in the juice and flesh.",
     "climateConditions": "Needs cool nights (below 10°C) to develop anthocyanin pigmentation; unique among citrus.",
     "growingTips": "The cooler the nights during ripening, the deeper the red colour. Excellent juice variety.",
-    "healthBenefits": ["Rich in anthocyanin antioxidants (unique to blood oranges)", "Very high in Vitamin C", "Contains folate", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "Rich in anthocyanin antioxidants (unique to blood oranges)",
+      "Very high in Vitamin C",
+      "Contains folate",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "clementine",
@@ -725,7 +980,12 @@
     "texture": "Easy-peel loose skin with seedless, juicy segments.",
     "climateConditions": "More cold-tolerant than most citrus; one of the best for container growing in temperate climates.",
     "growingTips": "One of the easiest citrus for container culture. Self-fertile and extremely productive.",
-    "healthBenefits": ["High in Vitamin C and folate", "Contains potassium", "Easy to eat for children", "Supports immune health"]
+    "healthBenefits": [
+      "High in Vitamin C and folate",
+      "Contains potassium",
+      "Easy to eat for children",
+      "Supports immune health"
+    ]
   },
   {
     "id": "grapefruit",
@@ -739,7 +999,12 @@
     "texture": "Very juicy with thick pith; segments are large and succulent.",
     "climateConditions": "Needs the most heat of all common citrus to develop sweetness; thrives in Florida and California.",
     "growingTips": "Pink and ruby varieties are sweeter and more popular. Slow to ripen — needs 12–18 months.",
-    "healthBenefits": ["Very high in Vitamin C", "Contains naringenin for metabolism", "High in lycopene (pink varieties)", "Interacts with some medications — check before use"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Contains naringenin for metabolism",
+      "High in lycopene (pink varieties)",
+      "Interacts with some medications — check before use"
+    ]
   },
   {
     "id": "meyer-lemon",
@@ -753,7 +1018,12 @@
     "texture": "Thin-skinned with abundant, sweet juice and fewer seeds.",
     "climateConditions": "More cold-tolerant than true lemon; ideal for container growing in temperate climates.",
     "growingTips": "Among the best citrus for pot culture; fragrant flowers make it an excellent houseplant.",
-    "healthBenefits": ["High in Vitamin C", "Rich in antioxidants", "More digestible than true lemon", "Supports immune health"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidants",
+      "More digestible than true lemon",
+      "Supports immune health"
+    ]
   },
   {
     "id": "lime",
@@ -767,7 +1037,12 @@
     "texture": "Very juicy with thin skin and abundant seeds.",
     "climateConditions": "Most frost-tender citrus; needs tropical or subtropical warmth year-round.",
     "growingTips": "Bring containers indoors at first frost. Protect from any cold draughts.",
-    "healthBenefits": ["Very high in Vitamin C", "Contains limonoids for cancer prevention", "Supports iron absorption", "Anti-bacterial compounds"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Contains limonoids for cancer prevention",
+      "Supports iron absorption",
+      "Anti-bacterial compounds"
+    ]
   },
   {
     "id": "kumquat",
@@ -781,7 +1056,12 @@
     "texture": "Firm rind eaten intact; the contrast of textures is part of the appeal.",
     "climateConditions": "Most cold-hardy citrus relative; tolerates light frost to around -8°C when established.",
     "growingTips": "Eat the whole fruit — the sweet peel is the point. Excellent ornamental container plant.",
-    "healthBenefits": ["High in Vitamin C", "Rich in plant flavonoids in the peel", "Contains calcium and potassium", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in plant flavonoids in the peel",
+      "Contains calcium and potassium",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "pomegranate",
@@ -795,7 +1075,12 @@
     "texture": "Crunchy, juicy arils each encasing a seed; the seeds are edible.",
     "climateConditions": "Thrives in hot, dry Mediterranean conditions; surprisingly cold-tolerant to -12°C once established.",
     "growingTips": "Harvest when skin begins to split. Drought-tolerant once established. Beautiful ornamental year-round.",
-    "healthBenefits": ["Exceptionally high in punicalagins", "Anti-inflammatory and anti-cancer", "Supports prostate health", "Lowers blood pressure"]
+    "healthBenefits": [
+      "Exceptionally high in punicalagins",
+      "Anti-inflammatory and anti-cancer",
+      "Supports prostate health",
+      "Lowers blood pressure"
+    ]
   },
   {
     "id": "avocado",
@@ -809,7 +1094,12 @@
     "texture": "Smooth and creamy — almost spreadable; texture depends greatly on ripeness.",
     "climateConditions": "Frost-tender; needs warmth and humidity. California and Florida varieties have different requirements.",
     "growingTips": "Plant a type A and type B for best yields. Avocados ripen off the tree — harvest when full-sized.",
-    "healthBenefits": ["Rich in heart-healthy monounsaturated fats", "High in potassium (more than banana)", "Contains Vitamins K, C, B5 and B6", "Supports nutrient absorption"]
+    "healthBenefits": [
+      "Rich in heart-healthy monounsaturated fats",
+      "High in potassium (more than banana)",
+      "Contains Vitamins K, C, B5 and B6",
+      "Supports nutrient absorption"
+    ]
   },
   {
     "id": "guava",
@@ -823,7 +1113,12 @@
     "texture": "Granular and seedy interior with smooth, thin skin; very aromatic.",
     "climateConditions": "Frost-tender but adaptable; thrives in tropical and subtropical conditions.",
     "growingTips": "Self-fertile and incredibly productive. Can be container-grown and brought indoors in winter.",
-    "healthBenefits": ["One of the highest Vitamin C fruits — 4× more than orange", "Rich in lycopene", "High in dietary fibre", "Contains Vitamins A and B9"]
+    "healthBenefits": [
+      "One of the highest Vitamin C fruits — 4× more than orange",
+      "Rich in lycopene",
+      "High in dietary fibre",
+      "Contains Vitamins A and B9"
+    ]
   },
   {
     "id": "feijoa",
@@ -837,7 +1132,12 @@
     "texture": "Gritty and granular interior with smooth, thin green skin; flesh scooped out with a spoon.",
     "climateConditions": "Reasonably cold-hardy to -12°C; thrives in mild, maritime climates.",
     "growingTips": "Plant two different varieties for cross-pollination. Edible flowers are sweet and delicious.",
-    "healthBenefits": ["High in iodine — rare for fruit", "Rich in Vitamin C", "Contains folate and potassium", "Anti-microbial compounds"]
+    "healthBenefits": [
+      "High in iodine — rare for fruit",
+      "Rich in Vitamin C",
+      "Contains folate and potassium",
+      "Anti-microbial compounds"
+    ]
   },
   {
     "id": "banana",
@@ -851,7 +1151,12 @@
     "texture": "Soft and starchy; creamy-textured with no seeds in cultivated varieties.",
     "climateConditions": "Needs warmth, humidity, and wind protection; the pseudostem dies after fruiting.",
     "growingTips": "Cut fruited stems to the ground to allow suckers to take over. Mulch heavily in cooler zones.",
-    "healthBenefits": ["Rich in potassium for heart health", "Contains Vitamin B6 for brain function", "Good source of quick-release energy", "Contains resistant starch when unripe"]
+    "healthBenefits": [
+      "Rich in potassium for heart health",
+      "Contains Vitamin B6 for brain function",
+      "Good source of quick-release energy",
+      "Contains resistant starch when unripe"
+    ]
   },
   {
     "id": "grape-table",
@@ -865,7 +1170,12 @@
     "texture": "Juicy and thin-skinned; seedless varieties offer the best eating experience.",
     "climateConditions": "Needs full sun and warmth for sugar development; tolerates most well-drained soils.",
     "growingTips": "Spur-prune hard each winter to two buds per rod. Thin bunches to improve size and air circulation.",
-    "healthBenefits": ["Rich in resveratrol antioxidants", "Contains Vitamins C and K", "High in potassium", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "Rich in resveratrol antioxidants",
+      "Contains Vitamins C and K",
+      "High in potassium",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "kiwi-hardy",
@@ -879,7 +1189,12 @@
     "texture": "Smooth-skinned and grape-sized; eaten whole without peeling.",
     "climateConditions": "Very cold-hardy; needs a strong, sturdy support structure for its vigorous growth.",
     "growingTips": "One male plant pollinates up to eight females. Train on a pergola — can grow 10 m in a season.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in Vitamin K and folate", "Contains actinidin enzyme for protein digestion", "High in antioxidants"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in Vitamin K and folate",
+      "Contains actinidin enzyme for protein digestion",
+      "High in antioxidants"
+    ]
   },
   {
     "id": "passion-fruit",
@@ -893,7 +1208,12 @@
     "texture": "Gelatinous pulp surrounding edible seeds; the contrast of slippery and crunchy is appealing.",
     "climateConditions": "Frost-tender; needs warmth and shelter. Grows fast and produces prolifically in warm climates.",
     "growingTips": "Harvest only when the skin begins to wrinkle — this signals peak ripeness and sweetness.",
-    "healthBenefits": ["Very high in Vitamins A and C", "Rich in dietary fibre", "Contains iron and potassium", "Sedative alkaloids support sleep"]
+    "healthBenefits": [
+      "Very high in Vitamins A and C",
+      "Rich in dietary fibre",
+      "Contains iron and potassium",
+      "Sedative alkaloids support sleep"
+    ]
   },
   {
     "id": "serviceberry",
@@ -907,7 +1227,12 @@
     "texture": "Soft and juicy; similar to blueberry but with a softer skin.",
     "climateConditions": "Native to woodland edges and stream banks; tolerates partial shade and various soil types.",
     "growingTips": "Among the first fruits of the season. Beautiful spring blossom and autumn colour make it highly ornamental.",
-    "healthBenefits": ["High in iron", "Rich in Vitamin C", "Contains copper and manganese", "Anti-inflammatory antioxidants"]
+    "healthBenefits": [
+      "High in iron",
+      "Rich in Vitamin C",
+      "Contains copper and manganese",
+      "Anti-inflammatory antioxidants"
+    ]
   },
   {
     "id": "aronia",
@@ -921,7 +1246,12 @@
     "texture": "Firm and dense; stains deeply like elderberry.",
     "climateConditions": "Exceptionally cold-hardy native shrub; tolerates wet soils and partial shade.",
     "growingTips": "Best processed — juice, dried, or jam. Exceptionally productive and virtually pest-free.",
-    "healthBenefits": ["Among the highest antioxidant-density fruits known", "Rich in proanthocyanidins", "Supports cardiovascular health", "Anti-diabetic compounds"]
+    "healthBenefits": [
+      "Among the highest antioxidant-density fruits known",
+      "Rich in proanthocyanidins",
+      "Supports cardiovascular health",
+      "Anti-diabetic compounds"
+    ]
   },
   {
     "id": "hackberry",
@@ -935,7 +1265,12 @@
     "texture": "Small with a large central seed; thin sweet flesh surrounds a hard stone.",
     "climateConditions": "Extremely tough; survives drought, compacted urban soils, salt spray, and extreme cold.",
     "growingTips": "Excellent urban and wildlife tree. Largely self-sufficient once established.",
-    "healthBenefits": ["Contains healthy fats in the seed", "High in protein relative to other fruits", "Traditional food source", "Good source of carbohydrates"]
+    "healthBenefits": [
+      "Contains healthy fats in the seed",
+      "High in protein relative to other fruits",
+      "Traditional food source",
+      "Good source of carbohydrates"
+    ]
   },
   {
     "id": "mango-alphonso",
@@ -949,7 +1284,12 @@
     "texture": "Smooth, creamy, and completely fibreless — melts in the mouth.",
     "climateConditions": "Thrives in tropical climates with a distinct dry season.",
     "growingTips": "Requires full sun and well-drained soil; avoid heavy humidity during flowering.",
-    "healthBenefits": ["Rich in Vitamin A", "High in antioxidants", "Supports digestive health", "Contains Vitamins C and B6"]
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "High in antioxidants",
+      "Supports digestive health",
+      "Contains Vitamins C and B6"
+    ]
   },
   {
     "id": "mango-kesar",
@@ -963,7 +1303,12 @@
     "texture": "Smooth and creamy; slightly more fibrous than Alphonso.",
     "climateConditions": "Thrives in semi-arid tropical conditions of Gujarat; needs distinct wet and dry seasons.",
     "growingTips": "Best in dry, warm climates. Avoid overwatering; good drainage is essential.",
-    "healthBenefits": ["Rich in Vitamin A and C", "High in beta-carotene", "Supports immune function", "Anti-inflammatory compounds"]
+    "healthBenefits": [
+      "Rich in Vitamin A and C",
+      "High in beta-carotene",
+      "Supports immune function",
+      "Anti-inflammatory compounds"
+    ]
   },
   {
     "id": "mango-kent",
@@ -977,7 +1322,12 @@
     "texture": "Smooth and very juicy with minimal fibre.",
     "climateConditions": "Tolerates South Florida subtropical humidity; needs good air circulation to prevent fungal issues.",
     "growingTips": "Excellent Florida backyard tree; prune after harvest to maintain manageable size.",
-    "healthBenefits": ["High in Vitamin C and A", "Contains folate", "Rich in beta-carotene", "Supports eye health"]
+    "healthBenefits": [
+      "High in Vitamin C and A",
+      "Contains folate",
+      "Rich in beta-carotene",
+      "Supports eye health"
+    ]
   },
   {
     "id": "mango-keitt",
@@ -991,7 +1341,12 @@
     "texture": "Firm and moderately fibrous; holds up well for slicing.",
     "climateConditions": "Adaptable to South Florida conditions; one of the last mangoes to ripen.",
     "growingTips": "Do not judge ripeness by colour — Keitt stays green. Use the squeeze test for ripeness.",
-    "healthBenefits": ["Rich in Vitamins A and C", "High in dietary fibre", "Contains potassium", "Antioxidant polyphenols"]
+    "healthBenefits": [
+      "Rich in Vitamins A and C",
+      "High in dietary fibre",
+      "Contains potassium",
+      "Antioxidant polyphenols"
+    ]
   },
   {
     "id": "guava-allahabad",
@@ -1005,7 +1360,12 @@
     "texture": "Soft, white flesh with minimal grittiness; fewer seeds than other varieties.",
     "climateConditions": "Thrives in tropical and subtropical plains; tolerates drought once established.",
     "growingTips": "Best eaten fresh when just softening. Prolific bearer — thin fruit for larger size.",
-    "healthBenefits": ["Extremely high in Vitamin C", "Rich in dietary fibre", "Contains folate and potassium", "Antioxidant lycopene"]
+    "healthBenefits": [
+      "Extremely high in Vitamin C",
+      "Rich in dietary fibre",
+      "Contains folate and potassium",
+      "Antioxidant lycopene"
+    ]
   },
   {
     "id": "guava-beaumont",
@@ -1019,7 +1379,12 @@
     "texture": "Granular pink flesh with many seeds; best processed for juice or jam.",
     "climateConditions": "Adaptable to South Florida conditions; tolerates brief cold snaps.",
     "growingTips": "Prolific bearer. Best used for juice or jam; abundant seeds make fresh eating less appealing.",
-    "healthBenefits": ["One of the highest Vitamin C fruits", "Rich in lycopene (pink flesh)", "High in dietary fibre", "Contains Vitamins A and B9"]
+    "healthBenefits": [
+      "One of the highest Vitamin C fruits",
+      "Rich in lycopene (pink flesh)",
+      "High in dietary fibre",
+      "Contains Vitamins A and B9"
+    ]
   },
   {
     "id": "sapodilla-chikoo",
@@ -1033,7 +1398,12 @@
     "texture": "Grainy and starchy texture when under-ripe; becomes smooth and custard-like when fully ripe.",
     "climateConditions": "Thrives in sandy, well-drained tropical soils; very drought-tolerant once established.",
     "growingTips": "Only harvest when a small area of brown skin scratches to reveal tan (not green) underneath.",
-    "healthBenefits": ["High in dietary fibre", "Rich in Vitamins A and C", "Contains iron and potassium", "Good source of quick energy"]
+    "healthBenefits": [
+      "High in dietary fibre",
+      "Rich in Vitamins A and C",
+      "Contains iron and potassium",
+      "Good source of quick energy"
+    ]
   },
   {
     "id": "lychee-brewster",
@@ -1047,7 +1417,12 @@
     "texture": "Juicy and translucent white flesh around a central seed; enclosed in bumpy red skin.",
     "climateConditions": "Needs cool, dry winters to initiate flowering; does not tolerate frost or prolonged cold.",
     "growingTips": "Harvest in clusters. Needs a distinct cool-dry winter period to trigger blossom set.",
-    "healthBenefits": ["Very high in Vitamin C", "Rich in copper and potassium", "Contains epicatechin antioxidants", "Anti-inflammatory oligonol compounds"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in copper and potassium",
+      "Contains epicatechin antioxidants",
+      "Anti-inflammatory oligonol compounds"
+    ]
   },
   {
     "id": "avocado-choquette",
@@ -1061,7 +1436,12 @@
     "texture": "Smooth and creamy with a glossy, thin green skin; large with a small seed.",
     "climateConditions": "Adapted to Florida humidity and warmth; type B pollinator pairs well with type A varieties.",
     "growingTips": "Type B variety — pair with a type A (e.g. Lula) for best yields. Large tree needing space.",
-    "healthBenefits": ["Rich in heart-healthy monounsaturated fats", "High in potassium", "Contains Vitamins K, C and B6", "Supports nutrient absorption from other foods"]
+    "healthBenefits": [
+      "Rich in heart-healthy monounsaturated fats",
+      "High in potassium",
+      "Contains Vitamins K, C and B6",
+      "Supports nutrient absorption from other foods"
+    ]
   },
   {
     "id": "starfruit-carambola",
@@ -1075,7 +1455,12 @@
     "texture": "Crisp and juicy with a distinctive star cross-section; waxy, edible skin.",
     "climateConditions": "Thrives in tropical and subtropical conditions; tolerates brief dry periods.",
     "growingTips": "Self-fertile and prolific. Fruits twice yearly. Sweet varieties are better for fresh eating.",
-    "healthBenefits": ["High in Vitamin C", "Rich in antioxidant flavonoids", "Low in calories", "Contains potassium and fibre. Note: toxic in high amounts to those with kidney disease"]
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidant flavonoids",
+      "Low in calories",
+      "Contains potassium and fibre. Note: toxic in high amounts to those with kidney disease"
+    ]
   },
   {
     "id": "jackfruit",
@@ -1089,7 +1474,12 @@
     "texture": "Ripe: stringy and sweet; unripe: firm and meaty — a popular meat substitute.",
     "climateConditions": "Strictly tropical; needs heat, humidity, and well-drained deep soil.",
     "growingTips": "Extremely large fruit (up to 35 kg) needs support when young. Wear gloves when cutting.",
-    "healthBenefits": ["Rich in Vitamins B6 and C", "High in dietary fibre", "Contains potassium and magnesium", "Good plant-based protein source when unripe"]
+    "healthBenefits": [
+      "Rich in Vitamins B6 and C",
+      "High in dietary fibre",
+      "Contains potassium and magnesium",
+      "Good plant-based protein source when unripe"
+    ]
   },
   {
     "id": "papaya-red-lady",
@@ -1103,6 +1493,1702 @@
     "texture": "Smooth and buttery-soft; easily scooped from the skin with a spoon.",
     "climateConditions": "Needs warmth year-round; killed by frost. Thrives in tropical and subtropical conditions.",
     "growingTips": "Fruits within 9–11 months of seed. Replace every 2–3 years as productivity declines with age.",
-    "healthBenefits": ["Very high in Vitamin C", "Contains papain enzyme for protein digestion", "Rich in beta-carotene", "Supports digestive and immune health"]
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Contains papain enzyme for protein digestion",
+      "Rich in beta-carotene",
+      "Supports digestive and immune health"
+    ]
+  },
+  {
+    "id": "dasheri-mango",
+    "name": "Dasheri Mango",
+    "botanicalName": "Mangifera indica 'Dasheri'",
+    "region": "India (North)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Classic North Indian mango from the Malihabad belt near Lucknow. Elongated, fibreless, intensely fragrant.",
+    "tasteDescription": "Very sweet with a rich, perfumed aroma and almost no tartness.",
+    "texture": "Smooth, fibreless, melting flesh.",
+    "climateConditions": "Thrives in hot, dry subtropical summers with a distinct dry season before fruiting.",
+    "growingTips": "Grafted trees fruit in 3–5 years. Withhold irrigation before flowering to boost bloom.",
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "Good source of Vitamin C",
+      "Contains digestive enzymes",
+      "Provides dietary fibre"
+    ]
+  },
+  {
+    "id": "langra-mango",
+    "name": "Langra Mango",
+    "botanicalName": "Mangifera indica 'Langra'",
+    "region": "India (North)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "July – August",
+    "notes": "Famous Varanasi mango that stays greenish even when ripe. Prized for its turpentine-tinged richness.",
+    "tasteDescription": "Sweet and aromatic with a distinctive resinous, lemony note.",
+    "texture": "Soft, fibreless and juicy.",
+    "climateConditions": "Hot humid subtropical plains; needs monsoon moisture during fruit fill.",
+    "growingTips": "Harvest when shoulders fill out though skin remains green. Prone to alternate bearing.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in beta-carotene",
+      "Supports immune function",
+      "Contains antioxidant polyphenols"
+    ]
+  },
+  {
+    "id": "chausa-mango",
+    "name": "Chausa Mango",
+    "botanicalName": "Mangifera indica 'Chausa'",
+    "region": "India (North)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "August – September",
+    "notes": "Late-season golden-yellow mango from North India and Pakistan. Exceptionally sweet, often eaten by sucking the pulp.",
+    "tasteDescription": "Honey-sweet and mild with low acidity and a luscious aroma.",
+    "texture": "Very juicy, soft, nearly fibreless pulp.",
+    "climateConditions": "Hot subtropical climate; tolerates the late summer heat that ripens it.",
+    "growingTips": "One of the latest croppers, extending the mango season. Bag fruit to protect from fruit fly.",
+    "healthBenefits": [
+      "Rich in Vitamin A and C",
+      "Provides quick natural energy",
+      "Contains potassium",
+      "Source of dietary fibre"
+    ]
+  },
+  {
+    "id": "banganapalli-mango",
+    "name": "Banganapalli (Safeda) Mango",
+    "botanicalName": "Mangifera indica 'Banganapalli'",
+    "region": "India (South)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "April – June",
+    "notes": "Large oblong Andhra Pradesh mango, also called Safeda. A GI-tagged commercial variety with thin yellow skin.",
+    "tasteDescription": "Sweet and mildly tangy with a clean, non-fibrous finish.",
+    "texture": "Firm yet juicy, fibreless flesh.",
+    "climateConditions": "Hot semi-arid South Indian climate with dry pre-harvest months.",
+    "growingTips": "Heavy, reliable bearer. Thin fruit clusters for size and harvest at colour break.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in Vitamin A",
+      "Aids digestion",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "totapuri-mango",
+    "name": "Totapuri Mango",
+    "botanicalName": "Mangifera indica 'Totapuri'",
+    "region": "India (South)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – July",
+    "notes": "Distinctive parrot-beak shaped South Indian mango used widely for pulp, juice and pickles.",
+    "tasteDescription": "Mildly sweet and tangy with low sugar — more tart than dessert mangoes.",
+    "texture": "Firm, fibreless and slightly crisp.",
+    "climateConditions": "Hot tropical and semi-arid zones of southern India.",
+    "growingTips": "Vigorous and productive; ideal for processing. Tolerates a range of soils.",
+    "healthBenefits": [
+      "Good source of Vitamin C",
+      "Low in sugar",
+      "Contains Vitamin A",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "neelam-mango",
+    "name": "Neelam Mango",
+    "botanicalName": "Mangifera indica 'Neelam'",
+    "region": "India (South)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Small fragrant late-season mango widely grown across South India. Often the last mango of the season.",
+    "tasteDescription": "Sweet and highly aromatic with a hint of citrus.",
+    "texture": "Smooth, firm, fibreless flesh.",
+    "climateConditions": "Adaptable across tropical South India; tolerates humid coastal heat.",
+    "growingTips": "Compact tree suited to smaller gardens. Reliable annual bearer compared to many varieties.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains Vitamin A",
+      "Supports skin health",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "mallika-mango",
+    "name": "Mallika Mango",
+    "botanicalName": "Mangifera indica 'Mallika'",
+    "region": "India",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Hybrid of Neelam and Dasheri bred in India. A connoisseur's mango with deep orange flesh.",
+    "tasteDescription": "Intensely sweet with rich honey, citrus and melon notes.",
+    "texture": "Dense, fibreless, buttery flesh.",
+    "climateConditions": "Tropical to subtropical; performs well in both India and Florida.",
+    "growingTips": "Semi-dwarf and well suited to container or backyard growing. Harvest firm and ripen off-tree.",
+    "healthBenefits": [
+      "High in beta-carotene",
+      "Rich in Vitamin C",
+      "Contains dietary fibre",
+      "Antioxidant rich"
+    ]
+  },
+  {
+    "id": "amrapali-mango",
+    "name": "Amrapali Mango",
+    "botanicalName": "Mangifera indica 'Amrapali'",
+    "region": "India",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Dwarf high-density hybrid (Dasheri x Neelam) developed by IARI. Popular for small orchards.",
+    "tasteDescription": "Very sweet and rich with deep red-orange pulp.",
+    "texture": "Fibreless, soft and juicy.",
+    "climateConditions": "Tropical and subtropical India; suited to high-density planting.",
+    "growingTips": "Naturally dwarf — plant closely. Regular bearer with high yield per acre.",
+    "healthBenefits": [
+      "Exceptionally high in Vitamin A",
+      "Rich in Vitamin C",
+      "Contains iron",
+      "Supports eye health"
+    ]
+  },
+  {
+    "id": "raspuri-mango",
+    "name": "Raspuri Mango",
+    "botanicalName": "Mangifera indica 'Raspuri'",
+    "region": "India (South)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – June",
+    "notes": "Oval Karnataka mango known as the 'Queen of Mangoes', excellent for juices and smoothies.",
+    "tasteDescription": "Sweet and juicy with a soft melting richness.",
+    "texture": "Very juicy, smooth, slight fibre.",
+    "climateConditions": "Tropical southern Deccan plateau climate.",
+    "growingTips": "Best eaten fresh or pulped quickly as it does not store long. Harvest at full maturity.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Good source of Vitamin A",
+      "Hydrating",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "himsagar-mango",
+    "name": "Himsagar Mango",
+    "botanicalName": "Mangifera indica 'Himsagar'",
+    "region": "India (East)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – June",
+    "notes": "Premium West Bengal mango with very high pulp-to-fruit ratio and no fibre.",
+    "tasteDescription": "Richly sweet and creamy with a strong aroma.",
+    "texture": "Completely fibreless, dense and smooth.",
+    "climateConditions": "Humid subtropical eastern India (Bengal, Odisha).",
+    "growingTips": "Short shelf life — consume soon after ripening. Susceptible to anthracnose in humidity.",
+    "healthBenefits": [
+      "High in Vitamin A and C",
+      "Rich in antioxidants",
+      "Aids digestion",
+      "Provides natural energy"
+    ]
+  },
+  {
+    "id": "fazli-mango",
+    "name": "Fazli Mango",
+    "botanicalName": "Mangifera indica 'Fazli'",
+    "region": "India (East)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "July – August",
+    "notes": "Large late-season Bengal/Bihar mango, often weighing over a kilo. Popular for pickles and amchur when raw.",
+    "tasteDescription": "Mildly sweet with a tangy edge; pleasant but not as rich as dessert types.",
+    "texture": "Firm, somewhat fibrous, very fleshy.",
+    "climateConditions": "Humid subtropical eastern plains.",
+    "growingTips": "Vigorous large tree; excellent shade and heavy yields. Great dual-purpose variety.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Source of Vitamin A",
+      "Provides dietary fibre",
+      "Contains antioxidants"
+    ]
+  },
+  {
+    "id": "haden-mango",
+    "name": "Haden Mango",
+    "botanicalName": "Mangifera indica 'Haden'",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – June",
+    "notes": "Classic Florida mango from 1910 that parented many modern varieties. Brilliant red blush.",
+    "tasteDescription": "Sweet with a rich, aromatic, slightly tart flavour.",
+    "texture": "Firm with a little fibre near the seed.",
+    "climateConditions": "Warm frost-free tropical/subtropical climate.",
+    "growingTips": "Vigorous grower. Prone to alternate bearing and anthracnose in humid summers.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Good source of Vitamin A",
+      "Contains fibre",
+      "Antioxidant rich"
+    ]
+  },
+  {
+    "id": "tommy-atkins-mango",
+    "name": "Tommy Atkins Mango",
+    "botanicalName": "Mangifera indica 'Tommy Atkins'",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – July",
+    "notes": "The most common commercial export mango thanks to its durability and long shelf life.",
+    "tasteDescription": "Mildly sweet, lightly tangy — less aromatic than heirloom types.",
+    "texture": "Firm and fibrous.",
+    "climateConditions": "Tropical and subtropical; very tolerant of handling and storage.",
+    "growingTips": "Heavy reliable bearer with good disease resistance. Excellent first tree for beginners.",
+    "healthBenefits": [
+      "Good source of Vitamin C",
+      "Contains Vitamin A",
+      "Provides fibre",
+      "Long shelf stability"
+    ]
+  },
+  {
+    "id": "valencia-pride-mango",
+    "name": "Valencia Pride Mango",
+    "botanicalName": "Mangifera indica 'Valencia Pride'",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "July – August",
+    "notes": "A Haden seedling producing long, elegant fibreless fruit. A Florida favourite for backyard growers.",
+    "tasteDescription": "Sweet and rich with a classic aromatic mango flavour.",
+    "texture": "Smooth, fibreless, melting.",
+    "climateConditions": "Warm frost-free climate; vigorous in Florida heat.",
+    "growingTips": "Large vigorous tree — give it space or prune to size. Mid-to-late season cropper.",
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "High in Vitamin C",
+      "Provides antioxidants",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "nam-doc-mai-mango",
+    "name": "Nam Doc Mai Mango",
+    "botanicalName": "Mangifera indica 'Nam Doc Mai'",
+    "region": "Thailand/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Premium Thai mango, superb eaten green with chilli-salt or fully ripe. Popular dooryard tree in Florida.",
+    "tasteDescription": "Sweet and fragrant with a citrus-floral aroma when ripe.",
+    "texture": "Fibreless, smooth and juicy.",
+    "climateConditions": "Tropical lowland climate; highly heat tolerant.",
+    "growingTips": "Suited to containers and small yards. Can produce two crops in ideal climates.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in Vitamin A",
+      "Contains antioxidants",
+      "Aids digestion"
+    ]
+  },
+  {
+    "id": "carrie-mango",
+    "name": "Carrie Mango",
+    "botanicalName": "Mangifera indica 'Carrie'",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Beloved Florida dwarf mango famous for intense flavour and disease resistance. Stays green when ripe.",
+    "tasteDescription": "Exceptionally sweet and rich with a spicy, aromatic depth.",
+    "texture": "Fibreless, soft and creamy.",
+    "climateConditions": "Warm humid subtropical; notably anthracnose resistant.",
+    "growingTips": "Naturally dwarf — ideal for containers and small gardens. Judge ripeness by softness and aroma, not colour.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "High in Vitamin A",
+      "Contains antioxidants",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "glenn-mango",
+    "name": "Glenn Mango",
+    "botanicalName": "Mangifera indica 'Glenn'",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – June",
+    "notes": "Early-season Florida mango with mild, crowd-pleasing flavour and good disease resistance.",
+    "tasteDescription": "Sweet, mild and peachy with low fibre.",
+    "texture": "Soft, fibreless and juicy.",
+    "climateConditions": "Warm subtropical; reliable in Florida's humidity.",
+    "growingTips": "Compact, manageable tree good for home growers. Consistent annual producer.",
+    "healthBenefits": [
+      "Good source of Vitamin C",
+      "Contains Vitamin A",
+      "Provides fibre",
+      "Antioxidant rich"
+    ]
+  },
+  {
+    "id": "ataulfo-mango",
+    "name": "Ataulfo (Honey/Champagne) Mango",
+    "botanicalName": "Mangifera indica 'Ataulfo'",
+    "region": "Mexico/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "March – July",
+    "notes": "Small golden kidney-shaped Mexican mango sold as Honey or Champagne mango. Buttery and fibreless.",
+    "tasteDescription": "Very sweet with creamy honey and citrus notes.",
+    "texture": "Smooth, buttery, completely fibreless.",
+    "climateConditions": "Tropical climate; thrives in warm coastal heat.",
+    "growingTips": "Thin-seeded with high edible yield. Skin wrinkles slightly when perfectly ripe.",
+    "healthBenefits": [
+      "Very high in Vitamin C",
+      "Rich in Vitamin A",
+      "Contains folate",
+      "Source of antioxidants"
+    ]
+  },
+  {
+    "id": "guava-pink",
+    "name": "Pink Guava",
+    "botanicalName": "Psidium guajava",
+    "region": "India/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "August – November",
+    "notes": "Classic pink-fleshed guava grown across India and the tropics. Eaten fresh or as juice and jam.",
+    "tasteDescription": "Sweet and musky-fragrant with a mild tang near the skin.",
+    "texture": "Soft, granular flesh with edible seeds.",
+    "climateConditions": "Tropical and subtropical; tolerates heat, humidity and brief dry spells.",
+    "growingTips": "Fast-growing and precocious. Prune after harvest to control size and boost the next crop.",
+    "healthBenefits": [
+      "Extremely high in Vitamin C",
+      "Rich in dietary fibre",
+      "Contains lycopene",
+      "Supports immunity"
+    ]
+  },
+  {
+    "id": "thai-white-guava",
+    "name": "Thai White Guava",
+    "botanicalName": "Psidium guajava 'Thai White'",
+    "region": "Thailand/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "Year-round in tropics",
+    "notes": "Large crisp white-fleshed guava eaten firm and crunchy, often with chilli-salt.",
+    "tasteDescription": "Mildly sweet and refreshing with a clean finish.",
+    "texture": "Very crisp and crunchy, like a firm pear.",
+    "climateConditions": "Warm tropical lowlands; heavy and continuous bearer.",
+    "growingTips": "Bag fruit to deter fruit fly. Harvest while still firm for the signature crunch.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Good source of fibre",
+      "Low glycaemic",
+      "Supports digestion"
+    ]
+  },
+  {
+    "id": "custard-apple",
+    "name": "Custard Apple (Sitaphal)",
+    "botanicalName": "Annona reticulata",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "September – November",
+    "notes": "Known as Sitaphal in India. Heart-shaped fruit with sweet creamy segments around black seeds.",
+    "tasteDescription": "Sweet and custardy with hints of vanilla and caramel.",
+    "texture": "Soft, creamy, custard-like pulp.",
+    "climateConditions": "Tropical and semi-arid; drought tolerant once established.",
+    "growingTips": "Harvest when the skin segments separate slightly and yield to gentle pressure. Ripens off-tree.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Good source of potassium",
+      "Contains magnesium",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "sugar-apple",
+    "name": "Sugar Apple (Sharifa)",
+    "botanicalName": "Annona squamosa",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "August – October",
+    "notes": "Also called Sweetsop or Sharifa. Knobby green fruit that breaks into sweet creamy segments.",
+    "tasteDescription": "Very sweet with a custardy, fragrant flavour.",
+    "texture": "Soft, grainy-creamy pulp around glossy seeds.",
+    "climateConditions": "Hot tropical and semi-arid; very heat and drought tolerant.",
+    "growingTips": "Small tree ideal for backyards. Picks when segments loosen; ripens quickly off the tree.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in antioxidants",
+      "Good source of fibre",
+      "Contains B vitamins"
+    ]
+  },
+  {
+    "id": "soursop",
+    "name": "Soursop (Lakshman Phal)",
+    "botanicalName": "Annona muricata",
+    "region": "Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round in tropics",
+    "notes": "Large spiny green fruit with fragrant fibrous pulp, popular for juices and ice creams.",
+    "tasteDescription": "Tangy-sweet with notes of pineapple, strawberry and citrus.",
+    "texture": "Soft, fibrous, cottony pulp.",
+    "climateConditions": "Warm humid tropical; very frost sensitive.",
+    "growingTips": "Protect from any cold. Harvest firm and let soften indoors. Strain pulp for juice.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains antioxidants",
+      "Source of B vitamins",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "jamun",
+    "name": "Jamun (Black Plum)",
+    "botanicalName": "Syzygium cumini",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – August",
+    "notes": "Indian black plum with deep purple astringent-sweet fruit famed for managing blood sugar.",
+    "tasteDescription": "Sweet-tart and astringent, staining the tongue purple.",
+    "texture": "Juicy with a thin skin and single large seed.",
+    "climateConditions": "Tropical and subtropical; tolerant of monsoon and heat.",
+    "growingTips": "Large hardy shade tree. Harvest fully coloured fruit; eat fresh or make juice and vinegar.",
+    "healthBenefits": [
+      "May help regulate blood sugar",
+      "Rich in iron",
+      "Contains Vitamin C",
+      "Source of antioxidants"
+    ]
+  },
+  {
+    "id": "ber",
+    "name": "Ber (Indian Jujube)",
+    "botanicalName": "Ziziphus mauritiana",
+    "region": "India/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "December – March",
+    "notes": "Indian jujube producing crisp apple-like fruit on a hardy thorny tree. Extremely drought tolerant.",
+    "tasteDescription": "Mildly sweet and tangy, apple-like when fresh.",
+    "texture": "Crisp and crunchy ripening to mealy.",
+    "climateConditions": "Hot arid and semi-arid; one of the most drought-hardy fruit trees.",
+    "growingTips": "Thrives on neglect in poor soils. Prune thorny growth and harvest as fruit turns yellow-brown.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains antioxidants",
+      "Source of fibre",
+      "Provides minerals"
+    ]
+  },
+  {
+    "id": "bael",
+    "name": "Bael (Wood Apple)",
+    "botanicalName": "Aegle marmelos",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "April – June",
+    "notes": "Sacred Indian tree with a hard-shelled aromatic fruit traditionally made into sherbet.",
+    "tasteDescription": "Sweet and aromatic with resinous, marmalade-like notes.",
+    "texture": "Dense, sticky, pulpy interior with seeds.",
+    "climateConditions": "Tropical and subtropical; tolerates drought and poor soils.",
+    "growingTips": "Slow-growing hardy tree. Crack the woody shell and scoop pulp for drinks; remove seeds.",
+    "healthBenefits": [
+      "Soothes digestion",
+      "Rich in fibre",
+      "Contains Vitamin C",
+      "Traditional gut tonic"
+    ]
+  },
+  {
+    "id": "wood-apple",
+    "name": "Wood Apple (Kawath)",
+    "botanicalName": "Limonia acidissima",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "October – March",
+    "notes": "Hard greyish-shelled fruit with tangy brown pulp, used for chutneys and drinks in India.",
+    "tasteDescription": "Tart and tangy with a fermented, tamarind-like sweetness.",
+    "texture": "Sticky, granular brown pulp.",
+    "climateConditions": "Hot tropical and semi-arid plains.",
+    "growingTips": "Hardy and low-maintenance. Fruit is ripe when it falls; shake and scoop the aromatic pulp.",
+    "healthBenefits": [
+      "Aids digestion",
+      "Rich in antioxidants",
+      "Source of Vitamin C",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "tamarind",
+    "name": "Tamarind (Imli)",
+    "botanicalName": "Tamarindus indica",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "February – April",
+    "notes": "Large tropical tree producing brown pods of tangy pulp essential to Indian and global cooking.",
+    "tasteDescription": "Intensely sour-sweet and tangy.",
+    "texture": "Sticky fibrous pulp around hard seeds.",
+    "climateConditions": "Hot tropical and semi-arid; very drought tolerant once mature.",
+    "growingTips": "Long-lived majestic shade tree. Harvest pods when brittle; store pulp compressed.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "Aids digestion",
+      "Source of magnesium",
+      "Contains tartaric acid"
+    ]
+  },
+  {
+    "id": "amla",
+    "name": "Amla (Indian Gooseberry)",
+    "botanicalName": "Phyllanthus emblica",
+    "region": "India/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "October – February",
+    "notes": "Revered Ayurvedic fruit; small translucent-green berries extraordinarily rich in Vitamin C.",
+    "tasteDescription": "Intensely sour and astringent with a sweet aftertaste.",
+    "texture": "Hard, crisp and fibrous.",
+    "climateConditions": "Tropical and subtropical; tolerates heat and moderate drought.",
+    "growingTips": "Hardy tree once established. Usually pickled, candied or juiced rather than eaten raw.",
+    "healthBenefits": [
+      "Exceptionally high in Vitamin C",
+      "Powerful antioxidant",
+      "Supports immunity",
+      "Traditional hair and skin tonic"
+    ]
+  },
+  {
+    "id": "karonda",
+    "name": "Karonda (Bengal Currant)",
+    "botanicalName": "Carissa carandas",
+    "region": "India/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "July – September",
+    "notes": "Thorny Indian shrub bearing clusters of tart berries used in pickles and preserves.",
+    "tasteDescription": "Sharply sour when green, sweet-tart when fully ripe and dark.",
+    "texture": "Crisp and juicy with small seeds.",
+    "climateConditions": "Tropical and semi-arid; very hardy and drought tolerant.",
+    "growingTips": "Makes an excellent thorny hedge. Harvest green for pickles, dark purple for fresh eating.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in iron",
+      "Contains antioxidants",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "phalsa",
+    "name": "Phalsa",
+    "botanicalName": "Grewia asiatica",
+    "region": "India/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "May – June",
+    "notes": "Small purple summer berries from the Indian subcontinent, famous for cooling sherbet.",
+    "tasteDescription": "Sweet-tart and refreshing with a tangy bite.",
+    "texture": "Juicy with a thin skin and small seed.",
+    "climateConditions": "Hot semi-arid and tropical; thrives in intense summer heat.",
+    "growingTips": "Prune hard in winter to encourage fruiting shoots. Harvest in multiple pickings as berries ripen.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Cooling and hydrating",
+      "Contains antioxidants",
+      "Source of minerals"
+    ]
+  },
+  {
+    "id": "kokum",
+    "name": "Kokum",
+    "botanicalName": "Garcinia indica",
+    "region": "India (Western Ghats)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "April – May",
+    "notes": "Western Ghats fruit dried into dark rinds used as a souring agent in Konkani and coastal cuisine.",
+    "tasteDescription": "Tart and tangy with a subtle sweetness.",
+    "texture": "Fleshy rind, dried to leathery.",
+    "climateConditions": "Humid tropical coastal climate of western India.",
+    "growingTips": "Slow-growing evergreen. Sun-dry the rinds; the pulp also yields cooling kokum sherbet.",
+    "healthBenefits": [
+      "Contains hydroxycitric acid",
+      "Cooling for digestion",
+      "Rich in antioxidants",
+      "Anti-inflammatory"
+    ]
+  },
+  {
+    "id": "mahua",
+    "name": "Mahua",
+    "botanicalName": "Madhuca longifolia",
+    "region": "India (Central)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "March – April",
+    "notes": "Central Indian tree whose sweet flowers are eaten, fermented and used in traditional foods.",
+    "tasteDescription": "Flowers are sweet and honey-like; fruit mildly sweet.",
+    "texture": "Fleshy fragrant flowers; oily seeds.",
+    "climateConditions": "Tropical dry deciduous forests; very drought hardy.",
+    "growingTips": "Large culturally important tree. Collect flowers as they drop at dawn; seeds yield oil.",
+    "healthBenefits": [
+      "Source of natural sugars",
+      "Contains minerals",
+      "Traditional tonic",
+      "Seed oil rich in fats"
+    ]
+  },
+  {
+    "id": "lychee-mauritius",
+    "name": "Mauritius Lychee",
+    "botanicalName": "Litchi chinensis 'Mauritius'",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – June",
+    "notes": "Popular lychee cultivar with red rough skin and fragrant translucent flesh.",
+    "tasteDescription": "Sweet and floral with a mild rose-like aroma.",
+    "texture": "Juicy, firm, translucent flesh.",
+    "climateConditions": "Subtropical with cool dry winters and warm humid summers.",
+    "growingTips": "Needs a brief cool period to flower. Protect from wind; harvest whole panicles when red.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains copper",
+      "Source of antioxidants",
+      "Hydrating"
+    ]
+  },
+  {
+    "id": "longan",
+    "name": "Longan",
+    "botanicalName": "Dimocarpus longan",
+    "region": "Asia/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "July – September",
+    "notes": "Relative of lychee with brown skin and sweet translucent flesh; called 'dragon eye'.",
+    "tasteDescription": "Sweet and musky with a refreshing finish.",
+    "texture": "Juicy, firm, translucent flesh around a dark seed.",
+    "climateConditions": "Tropical and warm subtropical; more cold tolerant than lychee.",
+    "growingTips": "Bears in large clusters. Harvest whole bunches when skin turns tan and flesh is sweet.",
+    "healthBenefits": [
+      "Good source of Vitamin C",
+      "Contains potassium",
+      "Source of antioxidants",
+      "Provides riboflavin"
+    ]
+  },
+  {
+    "id": "rambutan",
+    "name": "Rambutan",
+    "botanicalName": "Nephelium lappaceum",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "June – August",
+    "notes": "Hairy red tropical fruit related to lychee with sweet juicy flesh.",
+    "tasteDescription": "Sweet and mildly tart with a grape-like juiciness.",
+    "texture": "Firm, juicy, translucent flesh.",
+    "climateConditions": "Hot humid equatorial tropics; very frost sensitive.",
+    "growingTips": "Needs consistent warmth and humidity. Harvest when skin is fully red and spines soften.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains copper",
+      "Source of fibre",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "mangosteen",
+    "name": "Mangosteen",
+    "botanicalName": "Garcinia mangostana",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "Summer",
+    "notes": "The 'queen of fruits' with thick purple rind and sweet snow-white segments.",
+    "tasteDescription": "Sweet and tangy with delicate peach-citrus notes.",
+    "texture": "Soft, juicy, melting white segments.",
+    "climateConditions": "Hot humid equatorial tropics; extremely cold sensitive.",
+    "growingTips": "Very slow-growing and demanding of humidity. Shade young trees; harvest when rind is deep purple.",
+    "healthBenefits": [
+      "Rich in antioxidants (xanthones)",
+      "Contains Vitamin C",
+      "Anti-inflammatory",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "durian",
+    "name": "Durian",
+    "botanicalName": "Durio zibethinus",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "June – August",
+    "notes": "The pungent 'king of fruits' with spiky husk and rich custardy flesh.",
+    "tasteDescription": "Intensely rich and sweet with savoury, oniony, almond undertones.",
+    "texture": "Thick, creamy, custard-like flesh.",
+    "climateConditions": "Hot humid equatorial tropics with high rainfall.",
+    "growingTips": "Very large tree needing space and heat. Fruit drops when ripe; handle the spiny husk carefully.",
+    "healthBenefits": [
+      "High in healthy fats",
+      "Rich in potassium",
+      "Good source of fibre",
+      "Contains B vitamins"
+    ]
+  },
+  {
+    "id": "mamey-sapote",
+    "name": "Mamey Sapote",
+    "botanicalName": "Pouteria sapota",
+    "region": "Latin America/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Varies by cultivar",
+    "notes": "Large brown-skinned fruit with salmon-coloured flesh popular in Latin shakes and ice cream.",
+    "tasteDescription": "Sweet with flavours of sweet potato, pumpkin and almond.",
+    "texture": "Smooth, creamy, dense flesh.",
+    "climateConditions": "Warm humid tropics; frost sensitive.",
+    "growingTips": "Large tree; grafted plants fruit sooner. Test ripeness by scratching skin to reveal salmon flesh.",
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "High in Vitamin C",
+      "Good source of fibre",
+      "Contains potassium"
+    ]
+  },
+  {
+    "id": "black-sapote",
+    "name": "Black Sapote (Chocolate Pudding Fruit)",
+    "botanicalName": "Diospyros nigra",
+    "region": "Latin America/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "December – March",
+    "notes": "Persimmon relative whose ripe brown flesh resembles chocolate pudding.",
+    "tasteDescription": "Mild and sweet with a custardy, chocolate-pudding-like character.",
+    "texture": "Soft, smooth, custardy when fully ripe.",
+    "climateConditions": "Warm humid tropics and subtropics; some cold tolerance once established.",
+    "growingTips": "Harvest green and let soften until the skin browns and flesh turns dark. Eat with a spoon.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Source of potassium",
+      "Contains antioxidants",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "canistel",
+    "name": "Canistel (Egg Fruit)",
+    "botanicalName": "Pouteria campechiana",
+    "region": "Latin America/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Winter – Spring",
+    "notes": "Bright orange-yellow fruit with dry, mealy flesh resembling cooked egg yolk.",
+    "tasteDescription": "Sweet and rich, like custard or sweet potato.",
+    "texture": "Dry, smooth, mealy and dense.",
+    "climateConditions": "Warm tropical and subtropical; moderately cold tolerant.",
+    "growingTips": "Compact tree good for small yards. Ripen off-tree until soft; great in shakes and custards.",
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "Source of niacin",
+      "Contains Vitamin C",
+      "Provides carotenoids"
+    ]
+  },
+  {
+    "id": "starfruit-green",
+    "name": "Star Fruit (Kamrakh)",
+    "botanicalName": "Averrhoa carambola",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round in tropics",
+    "notes": "Ribbed fruit that cuts into star shapes; called Kamrakh in India. Eaten fresh or in chutney.",
+    "tasteDescription": "Sweet-tart and juicy with a grape-citrus character.",
+    "texture": "Crisp, watery and crunchy.",
+    "climateConditions": "Warm humid tropics and subtropics.",
+    "growingTips": "Productive small tree often fruiting multiple times a year. Harvest when ribs turn golden.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Low in calories",
+      "Contains antioxidants",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "bilimbi",
+    "name": "Bilimbi (Cucumber Tree)",
+    "botanicalName": "Averrhoa bilimbi",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round in tropics",
+    "notes": "Relative of star fruit bearing small sour green fruits used in pickles, curries and chutneys.",
+    "tasteDescription": "Very sour and tangy.",
+    "texture": "Crisp and juicy.",
+    "climateConditions": "Warm humid tropics; needs consistent moisture.",
+    "growingTips": "Fruits directly on trunk and branches in heavy clusters. Use fresh in cooking or preserve.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains antioxidants",
+      "Source of fibre",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "jabuticaba",
+    "name": "Jabuticaba",
+    "botanicalName": "Plinia cauliflora",
+    "region": "Brazil/Tropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Spring – Summer",
+    "notes": "Brazilian tree that fruits directly on its trunk with grape-like purple-black berries.",
+    "tasteDescription": "Sweet and slightly tart, like a rich grape.",
+    "texture": "Juicy gel-like pulp with thick skin.",
+    "climateConditions": "Subtropical to warm temperate; tolerates light frost when mature.",
+    "growingTips": "Slow-growing but long-lived. Fruits multiple times a year; eat fresh or make wine and jelly.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "Contains Vitamin C",
+      "Source of anti-inflammatory compounds",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "miracle-fruit",
+    "name": "Miracle Fruit",
+    "botanicalName": "Synsepalum dulcificum",
+    "region": "West Africa/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round",
+    "notes": "Small red berry that temporarily makes sour foods taste sweet.",
+    "tasteDescription": "Mildly sweet itself; alters taste perception so sour becomes sweet.",
+    "texture": "Thin pulp around a single seed.",
+    "climateConditions": "Warm humid tropics; needs acidic soil.",
+    "growingTips": "Grows well in containers with acidic mix. Eat the berry then taste a lemon for the effect.",
+    "healthBenefits": [
+      "Sugar-free sweetening aid",
+      "Contains antioxidants",
+      "Low calorie",
+      "Useful for taste modification"
+    ]
+  },
+  {
+    "id": "barbados-cherry",
+    "name": "Barbados Cherry (Acerola)",
+    "botanicalName": "Malpighia emarginata",
+    "region": "Latin America/Tropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Spring – Fall",
+    "notes": "Small bright-red cherry-like fruit among the richest natural sources of Vitamin C.",
+    "tasteDescription": "Tart and tangy with mild sweetness.",
+    "texture": "Soft and juicy.",
+    "climateConditions": "Warm tropical and subtropical; tolerates some drought.",
+    "growingTips": "Shrubby tree fruiting several times a year. Pick fully red and use quickly as it is perishable.",
+    "healthBenefits": [
+      "Extremely high in Vitamin C",
+      "Rich in antioxidants",
+      "Supports immunity",
+      "Contains Vitamin A"
+    ]
+  },
+  {
+    "id": "surinam-cherry",
+    "name": "Surinam Cherry (Pitanga)",
+    "botanicalName": "Eugenia uniflora",
+    "region": "Brazil/Tropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Spring – Summer",
+    "notes": "Ribbed red-to-black fruit on a hardy ornamental hedge plant.",
+    "tasteDescription": "Sweet-tart and resinous; sweeter as it darkens.",
+    "texture": "Soft and juicy.",
+    "climateConditions": "Warm subtropical and tropical; quite hardy and adaptable.",
+    "growingTips": "Excellent fruiting hedge. Let fruit ripen to deep red or black for best sweetness.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains Vitamin A",
+      "Source of antioxidants",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "june-plum",
+    "name": "June Plum (Amra)",
+    "botanicalName": "Spondias dulcis",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Fall – Winter",
+    "notes": "Crunchy tropical fruit eaten green with salt-chilli or ripe; called Amra/Ambarella.",
+    "tasteDescription": "Tangy and sweet with pineapple-mango notes.",
+    "texture": "Crisp when green, softer and juicy when ripe.",
+    "climateConditions": "Warm humid tropics; frost sensitive.",
+    "growingTips": "Fast-growing and productive. Harvest green for crunch or yellow for sweetness; fibrous seed.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains Vitamin A",
+      "Source of iron",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "indian-jujube-apple",
+    "name": "Apple Ber (Thai Apple Jujube)",
+    "botanicalName": "Ziziphus mauritiana 'Apple'",
+    "region": "India/Thailand",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "December – February",
+    "notes": "Improved large-fruited jujube the size of a small apple, crisp and sweet.",
+    "tasteDescription": "Sweet and crisp, like a cross between apple and pear.",
+    "texture": "Very crunchy and juicy.",
+    "climateConditions": "Hot semi-arid and tropical; highly drought tolerant.",
+    "growingTips": "Grafts fruit very young. Bag fruit against fruit fly; harvest at pale green to yellow.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Source of fibre",
+      "Contains antioxidants",
+      "Provides potassium"
+    ]
+  },
+  {
+    "id": "pomelo",
+    "name": "Pomelo (Chakotra)",
+    "botanicalName": "Citrus maxima",
+    "region": "India/Asia",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "Winter",
+    "notes": "Largest citrus fruit with thick rind and mild sweet segments; called Chakotra in India.",
+    "tasteDescription": "Mildly sweet and tangy, less bitter than grapefruit.",
+    "texture": "Firm, dry-ish segments that hold shape.",
+    "climateConditions": "Warm subtropical and tropical citrus climate.",
+    "growingTips": "Large vigorous tree. Peel the thick pith carefully; segments are great in salads.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Source of potassium",
+      "Contains antioxidants",
+      "Low calorie"
+    ]
+  },
+  {
+    "id": "sweet-lime",
+    "name": "Sweet Lime (Mosambi)",
+    "botanicalName": "Citrus limetta",
+    "region": "India",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "Winter – Spring",
+    "notes": "Indian mosambi, juiced widely across the subcontinent for a mild non-acidic refresher.",
+    "tasteDescription": "Mildly sweet with very low acidity.",
+    "texture": "Juicy, tender segments.",
+    "climateConditions": "Warm subtropical citrus belt.",
+    "growingTips": "Reliable bearer in citrus regions. Best enjoyed freshly juiced; thin skin peels easily.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Hydrating",
+      "Gentle on the stomach",
+      "Source of antioxidants"
+    ]
+  },
+  {
+    "id": "tangerine",
+    "name": "Tangerine",
+    "botanicalName": "Citrus tangerina",
+    "region": "Subtropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "November – January",
+    "notes": "Easy-peel loose-skinned citrus closely related to the mandarin.",
+    "tasteDescription": "Sweet and tangy with a bright aromatic zest.",
+    "texture": "Juicy, tender, easily separated segments.",
+    "climateConditions": "Warm subtropical citrus climate; some frost tolerance.",
+    "growingTips": "Productive small tree, good for containers. Harvest when fully coloured and slightly soft.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains Vitamin A",
+      "Source of fibre",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "key-lime",
+    "name": "Key Lime",
+    "botanicalName": "Citrus aurantiifolia",
+    "region": "Florida/Tropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Year-round, peak Summer",
+    "notes": "Small aromatic lime famous for Key lime pie. More fragrant and tart than Persian lime.",
+    "tasteDescription": "Intensely tart with a strong floral aroma.",
+    "texture": "Very juicy with thin skin.",
+    "climateConditions": "Warm frost-free subtropical; thrives in Florida heat.",
+    "growingTips": "Thorny small tree that does well in pots. Harvest when fruit yields slightly and turns yellowish.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains antioxidants",
+      "Aids iron absorption",
+      "Source of flavonoids"
+    ]
+  },
+  {
+    "id": "calamondin",
+    "name": "Calamondin",
+    "botanicalName": "Citrus × microcarpa",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "Year-round",
+    "notes": "Small ornamental sour-citrus prolific in containers; used in marmalades and Filipino cooking.",
+    "tasteDescription": "Sharply sour with a sweet edible rind.",
+    "texture": "Juicy with thin tender skin.",
+    "climateConditions": "Warm subtropical; one of the most cold-tolerant tropical citrus.",
+    "growingTips": "Heavy continuous bearer, excellent patio tree. Use whole fruit including rind for drinks and preserves.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains antioxidants",
+      "Source of calcium",
+      "Supports immunity"
+    ]
+  },
+  {
+    "id": "finger-lime",
+    "name": "Finger Lime",
+    "botanicalName": "Citrus australasica",
+    "region": "Australia",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Fall",
+    "notes": "Australian native producing cylindrical fruit filled with caviar-like juice pearls.",
+    "tasteDescription": "Tart and zesty with a burst of citrus 'pearls'.",
+    "texture": "Crisp vesicles that pop like caviar.",
+    "climateConditions": "Warm subtropical; tolerates partial shade.",
+    "growingTips": "Thorny slow-growing shrub. Harvest when fruit detaches easily; squeeze out the pearls as garnish.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Contains folate",
+      "Source of potassium",
+      "Rich in antioxidants"
+    ]
+  },
+  {
+    "id": "cashew",
+    "name": "Cashew",
+    "botanicalName": "Anacardium occidentale",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "March – May",
+    "notes": "Tropical tree producing the cashew nut beneath a fleshy cashew apple, both used in India.",
+    "tasteDescription": "Nut is rich and buttery; apple is sweet-astringent.",
+    "texture": "Crunchy nut; soft fibrous apple.",
+    "climateConditions": "Hot humid coastal tropics; drought tolerant once established.",
+    "growingTips": "Roast nuts carefully — raw shells contain caustic oil. Apple is juiced or fermented (feni).",
+    "healthBenefits": [
+      "Rich in healthy fats",
+      "Good source of magnesium",
+      "Contains copper",
+      "Provides plant protein"
+    ]
+  },
+  {
+    "id": "pistachio",
+    "name": "Pistachio",
+    "botanicalName": "Pistacia vera",
+    "region": "Middle East/Mediterranean",
+    "growingZone": "USDA 7–10",
+    "harvestWindow": "September",
+    "notes": "Desert-adapted nut tree producing green kernels in split shells.",
+    "tasteDescription": "Mildly sweet, buttery and rich.",
+    "texture": "Crunchy firm kernel.",
+    "climateConditions": "Hot dry summers and cool winters; very drought and heat tolerant.",
+    "growingTips": "Needs long hot summers and winter chill, plus a male tree for pollination. Alternate bearing is common.",
+    "healthBenefits": [
+      "High in protein",
+      "Rich in healthy fats",
+      "Good source of Vitamin B6",
+      "Contains antioxidants"
+    ]
+  },
+  {
+    "id": "pecan",
+    "name": "Pecan",
+    "botanicalName": "Carya illinoinensis",
+    "region": "North America (South)",
+    "growingZone": "USDA 6–9",
+    "harvestWindow": "October – November",
+    "notes": "Large hickory-family nut tree widely grown across the American South including parts of Florida.",
+    "tasteDescription": "Rich, buttery and sweet.",
+    "texture": "Crisp, oily kernel.",
+    "climateConditions": "Warm humid summers with adequate winter chill.",
+    "growingTips": "Large long-lived tree needing space and a second variety for pollination. Harvest after husks split.",
+    "healthBenefits": [
+      "Rich in healthy fats",
+      "Good source of fibre",
+      "Contains zinc",
+      "High in antioxidants"
+    ]
+  },
+  {
+    "id": "macadamia",
+    "name": "Macadamia",
+    "botanicalName": "Macadamia integrifolia",
+    "region": "Australia/Tropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Fall – Winter",
+    "notes": "Australian native producing rich buttery nuts in very hard shells.",
+    "tasteDescription": "Buttery, sweet and delicate.",
+    "texture": "Crisp yet creamy kernel.",
+    "climateConditions": "Warm subtropical with reliable moisture.",
+    "growingTips": "Evergreen tree slow to bear (5–7 years). Collect fallen nuts and cure before cracking.",
+    "healthBenefits": [
+      "Rich in monounsaturated fats",
+      "Source of manganese",
+      "Contains thiamine",
+      "Heart-healthy oils"
+    ]
+  },
+  {
+    "id": "almond-indian",
+    "name": "Indian Almond (Badam Tree)",
+    "botanicalName": "Terminalia catappa",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round",
+    "notes": "Tropical 'badam' tree (distinct from true almond) with edible almond-flavoured seeds.",
+    "tasteDescription": "Seed kernel is mildly sweet and almond-like.",
+    "texture": "Firm crunchy kernel inside a fibrous husk.",
+    "climateConditions": "Warm coastal tropics; salt and wind tolerant.",
+    "growingTips": "Large shade tree often planted along avenues and beaches. Crack the hard husk for the small kernel.",
+    "healthBenefits": [
+      "Contains healthy fats",
+      "Source of protein",
+      "Provides minerals",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "botanicalName": "Cocos nucifera",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "Year-round",
+    "notes": "Iconic tropical palm providing water, flesh and oil; central to coastal Indian life.",
+    "tasteDescription": "Sweet refreshing water; rich nutty flesh.",
+    "texture": "Soft jelly when young, firm and crunchy when mature.",
+    "climateConditions": "Hot humid coastal tropics; salt tolerant.",
+    "growingTips": "Plant in sandy well-drained soil near coasts. Harvest young for water, mature for copra and oil.",
+    "healthBenefits": [
+      "Hydrating electrolytes",
+      "Source of healthy fats",
+      "Contains manganese",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "date-palm",
+    "name": "Date Palm",
+    "botanicalName": "Phoenix dactylifera",
+    "region": "Middle East/Arid",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "August – October",
+    "notes": "Desert palm producing sweet dates; grown in arid regions and parts of South Asia.",
+    "tasteDescription": "Intensely sweet with caramel and honey notes.",
+    "texture": "Soft and chewy to firm, depending on stage.",
+    "climateConditions": "Hot arid climate with low humidity at fruiting.",
+    "growingTips": "Needs intense dry heat to ripen fruit. Requires male and female palms or hand pollination.",
+    "healthBenefits": [
+      "Rich in natural sugars and energy",
+      "High in fibre",
+      "Source of potassium",
+      "Contains antioxidants"
+    ]
+  },
+  {
+    "id": "jackfruit-kathal",
+    "name": "Jackfruit (Kathal - young)",
+    "botanicalName": "Artocarpus heterophyllus 'tender'",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "March – June",
+    "notes": "Tender young jackfruit (kathal) used as a meaty vegetable in Indian curries and biryani.",
+    "tasteDescription": "Neutral and savoury when young; absorbs spices well.",
+    "texture": "Firm, meaty and fibrous when young.",
+    "climateConditions": "Warm humid tropics; needs space for the very large tree.",
+    "growingTips": "Harvest small green fruit for cooking, or let mature for sweet ripe pods. Latex-heavy — oil hands when cutting.",
+    "healthBenefits": [
+      "Good source of fibre",
+      "Contains Vitamin C",
+      "Plant-based meat alternative",
+      "Provides potassium"
+    ]
+  },
+  {
+    "id": "breadfruit",
+    "name": "Breadfruit",
+    "botanicalName": "Artocarpus altilis",
+    "region": "Pacific/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "Summer – Fall",
+    "notes": "Starchy relative of jackfruit cooked like a potato across the tropics.",
+    "tasteDescription": "Mild and starchy, bread- or potato-like when cooked.",
+    "texture": "Dense and starchy; creamy when ripe.",
+    "climateConditions": "Hot humid lowland tropics.",
+    "growingTips": "Large handsome tree. Harvest mature-green for cooking; roast, boil or fry the flesh.",
+    "healthBenefits": [
+      "Good source of complex carbs",
+      "Rich in fibre",
+      "Contains Vitamin C",
+      "Source of potassium"
+    ]
+  },
+  {
+    "id": "tamarillo",
+    "name": "Tamarillo (Tree Tomato)",
+    "botanicalName": "Solanum betaceum",
+    "region": "Andes/Subtropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Fall – Winter",
+    "notes": "Egg-shaped tree tomato with tangy flesh used in both sweet and savoury dishes.",
+    "tasteDescription": "Tangy and tomato-like with sweet-tart fruity notes.",
+    "texture": "Smooth firm flesh with edible seeds.",
+    "climateConditions": "Cool subtropical and highland tropics; protect from frost.",
+    "growingTips": "Fast-growing short-lived shrub-tree bearing in 1–2 years. Peel the bitter skin before eating.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains Vitamin A",
+      "Source of potassium",
+      "Low calorie"
+    ]
+  },
+  {
+    "id": "white-sapote",
+    "name": "White Sapote",
+    "botanicalName": "Casimiroa edulis",
+    "region": "Mexico/Subtropical",
+    "growingZone": "USDA 9b–11",
+    "harvestWindow": "Summer – Fall",
+    "notes": "Soft cream-fleshed fruit with a custard-like sweetness, related to citrus.",
+    "tasteDescription": "Sweet with banana, peach and vanilla notes.",
+    "texture": "Soft, smooth, custardy flesh.",
+    "climateConditions": "Mild subtropical; more cold tolerant than most tropical fruits.",
+    "growingTips": "Vigorous tree; thin fruit to improve size. Harvest mature-firm and ripen until it yields to a gentle squeeze.",
+    "healthBenefits": [
+      "Source of Vitamin C",
+      "Contains potassium",
+      "Provides fibre",
+      "Calming traditional use"
+    ]
+  },
+  {
+    "id": "sapodilla-cricket-ball",
+    "name": "Cricket Ball Sapota",
+    "botanicalName": "Manilkara zapota 'Cricket Ball'",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Winter – Spring",
+    "notes": "Large round Indian sapota cultivar with abundant sweet malty flesh.",
+    "tasteDescription": "Sweet with malt, brown-sugar and pear notes.",
+    "texture": "Soft, grainy, melting flesh.",
+    "climateConditions": "Warm humid tropics; drought tolerant once established.",
+    "growingTips": "Hardy reliable cropper. Harvest mature fruit and ripen until soft; scrape skin to test for brown flesh.",
+    "healthBenefits": [
+      "Good source of fibre",
+      "Rich in Vitamin C",
+      "Contains copper",
+      "Provides natural energy"
+    ]
+  },
+  {
+    "id": "fig-indian",
+    "name": "Anjeer (Indian Fig)",
+    "botanicalName": "Ficus carica 'Poona'",
+    "region": "India/Subtropical",
+    "growingZone": "USDA 8–11",
+    "harvestWindow": "June – September",
+    "notes": "Indian fig cultivar (anjeer) grown in Maharashtra and Gujarat, eaten fresh and dried.",
+    "tasteDescription": "Richly sweet with honeyed jammy notes.",
+    "texture": "Soft and seedy with a tender skin.",
+    "climateConditions": "Hot dry subtropical with mild winters.",
+    "growingTips": "Tolerates heat and poor soil. Harvest when fruit droops and softens; dries excellently in sun.",
+    "healthBenefits": [
+      "High in dietary fibre",
+      "Rich in calcium",
+      "Source of potassium",
+      "Contains antioxidants"
+    ]
+  },
+  {
+    "id": "pomegranate-bhagwa",
+    "name": "Bhagwa Pomegranate",
+    "botanicalName": "Punica granatum 'Bhagwa'",
+    "region": "India",
+    "growingZone": "USDA 8–11",
+    "harvestWindow": "September – February",
+    "notes": "Premium Indian pomegranate cultivar with glossy red arils and soft seeds, a major export.",
+    "tasteDescription": "Sweet with a mild tang and very low bitterness.",
+    "texture": "Juicy crisp arils with soft seeds.",
+    "climateConditions": "Hot semi-arid; tolerates drought and high heat.",
+    "growingTips": "Drought-hardy shrub-tree. Withhold water before harvest to concentrate sweetness; protect from fruit cracking.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "High in Vitamin C",
+      "Supports heart health",
+      "Anti-inflammatory"
+    ]
+  },
+  {
+    "id": "indian-gooseberry-tree",
+    "name": "Star Gooseberry (Chalmeri)",
+    "botanicalName": "Phyllanthus acidus",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Year-round in tropics",
+    "notes": "Tart pale-green ribbed berries borne in clusters on the trunk, used for pickles and preserves.",
+    "tasteDescription": "Very sour and crisp.",
+    "texture": "Hard, crunchy and juicy.",
+    "climateConditions": "Warm humid tropics.",
+    "growingTips": "Small tree fruiting heavily along its branches. Use in pickles, candies and chutneys.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Source of antioxidants",
+      "Aids digestion",
+      "Contains fibre"
+    ]
+  },
+  {
+    "id": "rose-apple",
+    "name": "Rose Apple (Gulab Jamun fruit)",
+    "botanicalName": "Syzygium jambos",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Spring – Summer",
+    "notes": "Crisp pale fruit with a distinct rosewater aroma, eaten fresh in India and Southeast Asia.",
+    "tasteDescription": "Mildly sweet with a floral rosewater fragrance.",
+    "texture": "Crisp and watery, like a light apple.",
+    "climateConditions": "Warm humid tropics; needs steady moisture.",
+    "growingTips": "Attractive small tree. Eat fresh soon after harvest as it does not store well.",
+    "healthBenefits": [
+      "Hydrating and low calorie",
+      "Contains Vitamin C",
+      "Source of fibre",
+      "Provides antioxidants"
+    ]
+  },
+  {
+    "id": "water-apple",
+    "name": "Water Apple (Jamrul)",
+    "botanicalName": "Syzygium aqueum",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Spring – Summer",
+    "notes": "Bell-shaped crunchy watery fruit (jamrul) popular in Bengal and Southeast Asia.",
+    "tasteDescription": "Very mild, lightly sweet and refreshing.",
+    "texture": "Crisp, spongy and extremely watery.",
+    "climateConditions": "Warm humid tropics with high rainfall.",
+    "growingTips": "Productive small tree. Eat immediately as fruit bruises and spoils quickly.",
+    "healthBenefits": [
+      "Very hydrating",
+      "Low calorie",
+      "Contains Vitamin C",
+      "Source of fibre"
+    ]
+  },
+  {
+    "id": "indian-persimmon-amlok",
+    "name": "Indian Persimmon (Amlok/Tendu)",
+    "botanicalName": "Diospyros melanoxylon",
+    "region": "India",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "April – June",
+    "notes": "Wild Indian persimmon (tendu) with sweet yellow fruit; its leaves wrap beedis.",
+    "tasteDescription": "Sweet and mildly astringent when fully ripe.",
+    "texture": "Soft, pulpy when ripe.",
+    "climateConditions": "Tropical dry deciduous forests; very hardy.",
+    "growingTips": "Hardy forest tree. Let fruit fully ripen and soften to remove astringency before eating.",
+    "healthBenefits": [
+      "Source of Vitamin C",
+      "Contains antioxidants",
+      "Provides fibre",
+      "Traditional use"
+    ]
+  },
+  {
+    "id": "indian-coffee-plum",
+    "name": "Governor's Plum (Ramphal/Lukum)",
+    "botanicalName": "Flacourtia indica",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Summer",
+    "notes": "Small reddish-purple tart-sweet wild fruit common across India, eaten fresh or preserved.",
+    "tasteDescription": "Sweet-tart and slightly astringent.",
+    "texture": "Juicy with several small seeds.",
+    "climateConditions": "Tropical and semi-arid; very hardy and drought tolerant.",
+    "growingTips": "Thorny hardy shrub-tree useful as a hedge. Harvest dark purple fruit; roll between palms to reduce astringency.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains iron",
+      "Source of antioxidants",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "monkey-jackfruit",
+    "name": "Monkey Jack (Barhal/Lakoocha)",
+    "botanicalName": "Artocarpus lacucha",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "May – July",
+    "notes": "Jackfruit relative (barhal) with tangy-sweet yellow fruit eaten fresh or pickled in India.",
+    "tasteDescription": "Sweet-sour and tangy.",
+    "texture": "Soft fibrous pulp.",
+    "climateConditions": "Warm humid tropics and subtropics.",
+    "growingTips": "Large handsome tree. Harvest ripe yellow fruit; raw fruit is pickled or cooked.",
+    "healthBenefits": [
+      "Source of Vitamin C",
+      "Contains fibre",
+      "Provides antioxidants",
+      "Traditional digestive aid"
+    ]
+  },
+  {
+    "id": "ramphal",
+    "name": "Ramphal (Bullock's Heart)",
+    "botanicalName": "Annona reticulata 'Ramphal'",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Winter",
+    "notes": "Large heart-shaped custard-apple relative with smooth reddish skin and sweet pulp.",
+    "tasteDescription": "Sweet and mild, less fragrant than sitaphal.",
+    "texture": "Soft, slightly grainy custardy pulp.",
+    "climateConditions": "Tropical and semi-arid; drought tolerant.",
+    "growingTips": "Small hardy tree. Harvest mature fruit and ripen until soft; pulp is great in milkshakes.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Source of potassium",
+      "Contains antioxidants",
+      "Provides fibre"
+    ]
+  },
+  {
+    "id": "indian-blackberry-small",
+    "name": "Wild Jamun (Kala Jam)",
+    "botanicalName": "Syzygium cumini 'small'",
+    "region": "India/Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "June – July",
+    "notes": "Smaller wild form of jamun with intensely coloured astringent-sweet berries.",
+    "tasteDescription": "Tart-sweet and astringent.",
+    "texture": "Juicy with a large seed.",
+    "climateConditions": "Tropical and subtropical plains.",
+    "growingTips": "Hardy tree often found wild. Soak fruit in salt water to reduce astringency before eating.",
+    "healthBenefits": [
+      "Supports blood sugar control",
+      "Rich in iron",
+      "Contains Vitamin C",
+      "Source of antioxidants"
+    ]
+  },
+  {
+    "id": "muskmelon",
+    "name": "Muskmelon (Kharbooja)",
+    "botanicalName": "Cucumis melo",
+    "region": "India",
+    "growingZone": "USDA 9–11 (annual)",
+    "harvestWindow": "April – June",
+    "notes": "Fragrant netted summer melon (kharbooja) widely grown across northern India.",
+    "tasteDescription": "Sweet and musky with a floral aroma.",
+    "texture": "Soft, juicy, melting orange flesh.",
+    "climateConditions": "Hot dry summers; grown as a warm-season annual vine.",
+    "growingTips": "Sow after frost in warm soil. Harvest when stem slips easily and aroma is strong.",
+    "healthBenefits": [
+      "Rich in Vitamin A",
+      "High in Vitamin C",
+      "Hydrating",
+      "Source of potassium"
+    ]
+  },
+  {
+    "id": "wood-apple-elephant",
+    "name": "Elephant Apple (Chalta)",
+    "botanicalName": "Dillenia indica",
+    "region": "India (East/NE)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "October – December",
+    "notes": "Large green fruit (chalta) with tangy pulp used in Bengali and Assamese chutneys and dals.",
+    "tasteDescription": "Sour and astringent, used mainly in cooking.",
+    "texture": "Firm fibrous pulp within tough sepals.",
+    "climateConditions": "Warm humid tropics of eastern India.",
+    "growingTips": "Handsome evergreen with large white flowers. Use the gelatinous pulp for chutneys and curries.",
+    "healthBenefits": [
+      "Contains Vitamin C",
+      "Source of antioxidants",
+      "Aids digestion",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "indian-almond-pili",
+    "name": "Charoli (Chironji)",
+    "botanicalName": "Buchanania cochinchinensis",
+    "region": "India",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "March – May",
+    "notes": "Source of chironji nuts, small almond-flavoured seeds prized in Indian sweets.",
+    "tasteDescription": "Nutty and mildly sweet, almond-like.",
+    "texture": "Soft crunchy seed.",
+    "climateConditions": "Tropical dry deciduous forests; drought hardy.",
+    "growingTips": "Slow-growing forest tree. Collect and dry the small seeds; used in kheer, halwa and barfi.",
+    "healthBenefits": [
+      "Rich in healthy fats",
+      "Source of protein",
+      "Contains minerals",
+      "Provides energy"
+    ]
+  },
+  {
+    "id": "indian-cherry-lasoda",
+    "name": "Lasoda (Indian Cherry/Gunda)",
+    "botanicalName": "Cordia myxa",
+    "region": "India",
+    "growingZone": "USDA 9–11",
+    "harvestWindow": "April – June",
+    "notes": "Sticky-pulped small fruit (gunda) pickled while green across western India.",
+    "tasteDescription": "Mildly sweet and mucilaginous when ripe; used green for pickles.",
+    "texture": "Sticky gummy pulp around a seed.",
+    "climateConditions": "Hot semi-arid and tropical plains; drought tolerant.",
+    "growingTips": "Hardy tree giving useful shade. Harvest green for pickling or let ripen for fresh eating.",
+    "healthBenefits": [
+      "Soothes the throat",
+      "Contains fibre",
+      "Source of minerals",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "indian-strawberry-tree",
+    "name": "Strawberry Tree (Kaphal)",
+    "botanicalName": "Myrica esculenta",
+    "region": "India (Himalayan)",
+    "growingZone": "USDA 8–10",
+    "harvestWindow": "April – June",
+    "notes": "Himalayan kaphal with small red sweet-tart berries cherished in hill regions.",
+    "tasteDescription": "Sweet-tart and juicy.",
+    "texture": "Soft and juicy with a single seed.",
+    "climateConditions": "Cool subtropical Himalayan mid-hills.",
+    "growingTips": "Hardy hill tree. Harvest fully red ripe berries; eat fresh with a sprinkle of salt as locals do.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains antioxidants",
+      "Source of iron",
+      "Traditional tonic"
+    ]
+  },
+  {
+    "id": "passion-fruit-yellow",
+    "name": "Yellow Passion Fruit",
+    "botanicalName": "Passiflora edulis f. flavicarpa",
+    "region": "Tropical",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Summer – Fall",
+    "notes": "Vigorous yellow-skinned passion fruit vine well suited to tropical heat.",
+    "tasteDescription": "Tart and intensely aromatic with tropical floral notes.",
+    "texture": "Juicy aromatic pulp with crunchy edible seeds.",
+    "climateConditions": "Warm frost-free tropics and subtropics.",
+    "growingTips": "Fast-growing vine needing a strong trellis. Harvest fruit after it drops and wrinkles for peak sweetness.",
+    "healthBenefits": [
+      "High in Vitamin C",
+      "Rich in Vitamin A",
+      "Good source of fibre",
+      "Contains antioxidants"
+    ]
+  },
+  {
+    "id": "dragon-fruit",
+    "name": "Dragon Fruit (Pitaya)",
+    "botanicalName": "Hylocereus undatus",
+    "region": "Tropical (cactus)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Summer – Fall",
+    "notes": "Climbing cactus producing striking pink fruit with speckled flesh; increasingly grown in India.",
+    "tasteDescription": "Mildly sweet and refreshing, like a light melon-kiwi.",
+    "texture": "Soft juicy flesh with tiny crunchy seeds.",
+    "climateConditions": "Hot dry to humid tropics; drought tolerant cactus.",
+    "growingTips": "Needs a sturdy post or trellis to climb. Hand-pollinate night flowers for reliable fruit set.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "Source of Vitamin C",
+      "Contains fibre",
+      "Provides magnesium"
+    ]
+  },
+  {
+    "id": "indian-fig-cactus",
+    "name": "Prickly Pear (Nagphani)",
+    "botanicalName": "Opuntia ficus-indica",
+    "region": "India/Arid",
+    "growingZone": "USDA 8–11",
+    "harvestWindow": "Summer – Fall",
+    "notes": "Cactus fruit (nagphani/thohar) eaten across arid India; sweet magenta pulp full of seeds.",
+    "tasteDescription": "Sweet and mild, like watermelon with a hint of bubblegum.",
+    "texture": "Juicy soft pulp with many hard seeds.",
+    "climateConditions": "Hot arid and semi-arid; extremely drought tolerant.",
+    "growingTips": "Handle with thick gloves to avoid tiny glochid spines. Singe or peel skin before eating.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "Contains Vitamin C",
+      "Source of magnesium",
+      "Supports blood sugar"
+    ]
+  },
+  {
+    "id": "indian-olive-jalpai",
+    "name": "Indian Olive (Jalpai)",
+    "botanicalName": "Elaeocarpus floribundus",
+    "region": "India (East/NE)",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "October – December",
+    "notes": "Tart green fruit (jalpai) of eastern India used for pickles, chutneys and tenga dishes.",
+    "tasteDescription": "Sharply sour and astringent.",
+    "texture": "Firm fibrous flesh around a hard seed.",
+    "climateConditions": "Warm humid tropics of eastern India.",
+    "growingTips": "Large evergreen shade tree. Harvest green and use promptly for pickles and souring curries.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Aids digestion",
+      "Contains antioxidants",
+      "Traditional remedy"
+    ]
+  },
+  {
+    "id": "santol",
+    "name": "Santol (Cotton Fruit)",
+    "botanicalName": "Sandoricum koetjape",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "Summer",
+    "notes": "Round fuzzy-skinned fruit with cottony sweet-sour pulp around large seeds.",
+    "tasteDescription": "Sweet-tart and tangy.",
+    "texture": "Soft cottony pulp clinging to seeds.",
+    "climateConditions": "Hot humid lowland tropics.",
+    "growingTips": "Large productive tree. Suck the pulp from around the seeds; rind can be candied.",
+    "healthBenefits": [
+      "Source of Vitamin C",
+      "Contains fibre",
+      "Provides antioxidants",
+      "Aids digestion"
+    ]
+  },
+  {
+    "id": "salak",
+    "name": "Salak (Snake Fruit)",
+    "botanicalName": "Salacca zalacca",
+    "region": "Southeast Asia/Tropical",
+    "growingZone": "USDA 10b–11",
+    "harvestWindow": "Year-round",
+    "notes": "Palm fruit with snakeskin-patterned scaly skin and crunchy sweet-tart segments.",
+    "tasteDescription": "Sweet and tangy with a hint of pineapple and banana.",
+    "texture": "Crisp and dry, apple-like.",
+    "climateConditions": "Hot humid equatorial tropics.",
+    "growingTips": "Spiny clumping palm. Peel the scaly skin like an egg; segments contain a hard seed.",
+    "healthBenefits": [
+      "Rich in antioxidants",
+      "Source of potassium",
+      "Contains fibre",
+      "Provides iron"
+    ]
+  },
+  {
+    "id": "ceylon-olive-veralu",
+    "name": "Ceylon Olive (Veralu)",
+    "botanicalName": "Elaeocarpus serratus",
+    "region": "India/Sri Lanka",
+    "growingZone": "USDA 10–11",
+    "harvestWindow": "Fall – Winter",
+    "notes": "Tart green olive-like fruit popular in South Indian and Sri Lankan pickles.",
+    "tasteDescription": "Sour and astringent, mellowing when pickled.",
+    "texture": "Crisp firm flesh around a ridged seed.",
+    "climateConditions": "Warm humid tropics of South India and Sri Lanka.",
+    "growingTips": "Attractive evergreen. Crush lightly and pickle with salt and chilli, or eat with spice.",
+    "healthBenefits": [
+      "Rich in Vitamin C",
+      "Contains antioxidants",
+      "Aids digestion",
+      "Source of minerals"
+    ]
   }
 ]

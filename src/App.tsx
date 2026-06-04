@@ -171,8 +171,63 @@ export default function App() {
   };
 
   // ─── Save pin ────────────────────────────────────────────────────────────────
+  // ─── Weather lookup (Open-Meteo, no API key required) ──────────────────────
+  const WMO_CONDITIONS: Record<number, string> = {
+    0: 'Clear sky', 1: 'Mainly clear', 2: 'Partly cloudy', 3: 'Overcast',
+    45: 'Foggy', 48: 'Rime fog', 51: 'Light drizzle', 53: 'Drizzle', 55: 'Heavy drizzle',
+    56: 'Freezing drizzle', 57: 'Freezing drizzle', 61: 'Light rain', 63: 'Rain', 65: 'Heavy rain',
+    66: 'Freezing rain', 67: 'Freezing rain', 71: 'Light snow', 73: 'Snow', 75: 'Heavy snow',
+    77: 'Snow grains', 80: 'Light showers', 81: 'Showers', 82: 'Violent showers',
+    85: 'Snow showers', 86: 'Snow showers', 95: 'Thunderstorm',
+    96: 'Thunderstorm w/ hail', 99: 'Thunderstorm w/ hail',
+  };
+
+  const fetchWeather = async (lat: number, lng: number): Promise<{ temp: number; condition: string } | undefined> => {
+    try {
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,weather_code&temperature_unit=fahrenheit`;
+      const res = await fetch(url);
+      if (!res.ok) return undefined;
+      const data = await res.json();
+      const temp = data?.current?.temperature_2m;
+      const code = data?.current?.weather_code;
+      if (typeof temp !== 'number') return undefined;
+      return { temp: Math.round(temp), condition: WMO_CONDITIONS[code] ?? 'Unknown' };
+    } catch (err) {
+      console.warn('[weather] lookup failed:', err);
+      return undefined;
+    }
+  };
+
+  // ─── Auto-create a journal entry when a brand-new tree is saved ────────────
+  const createAutoJournalEntry = async (pick: Pin) => {
+    try {
+      const weather = await fetchWeather(pick.lat, pick.lng);
+      const now = new Date();
+      const id = crypto.randomUUID();
+      const locationLine = pick.address || pick.locationDescription || 'Location not specified';
+      const entry: NoteEntry = {
+        id,
+        uid: 'local',
+        date: now.toISOString(),
+        title: `Discovered ${pick.details.commonName}`,
+        content: `Added ${pick.details.commonName} to the map on ${now.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })} at ${now.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}.\n\nLocation: ${locationLine}\n${weather ? `Weather: ${weather.temp}°F, ${weather.condition}` : ''}\n\n— Your thoughts:\n`,
+        photos: [],
+        weather,
+        mood: '',
+        phenologyEvents: ['Planted / Discovered'],
+        treeId: pick.id,
+      };
+      await saveNote(entry);
+      setJournal(prev => [...prev, entry]);
+    } catch (err) {
+      console.warn('[auto-journal] failed:', err);
+    }
+  };
+
   const handleSaveLocation = async (pick: Pin, base64Photos: string[]) => {
     await savePick(pick);
+    // Auto-create a journal entry for this new find (silent, background)
+    createAutoJournalEntry(pick);
     setPicks(prev => {
       if (prev.some(p => p.id === pick.id)) return prev;
       return [...prev, pick];
@@ -258,6 +313,11 @@ export default function App() {
     await deleteNote(id);
     await deletePhotosForId(`note_${id}`);
     setJournal(prev => prev.filter(n => n.id !== id));
+  };
+
+  const handleUpdateJournalEntry = async (updated: NoteEntry) => {
+    await saveNote(updated);
+    setJournal(prev => prev.map(n => (n.id === updated.id ? updated : n)));
   };
 
   // ─── Upload photo (local base64) ─────────────────────────────────────────────
@@ -452,6 +512,7 @@ export default function App() {
               entries={journal}
               onAddEntry={handleAddJournalEntry}
               onDeleteEntry={handleDeleteJournalEntry}
+              onUpdateEntry={handleUpdateJournalEntry}
             />
           )}
 
@@ -502,6 +563,8 @@ export default function App() {
               onDeleteTree={handleDeleteTree}
               onEditTree={handleEditTree}
               onAddJournalEntry={handleAddJournalEntry}
+              onUpdateJournalEntry={handleUpdateJournalEntry}
+              onDeleteJournalEntry={handleDeleteJournalEntry}
               onUploadPhoto={handleUploadPhoto}
               journalEntries={journal.filter(e => e.treeId === selectedTree.id)}
               onCloneTree={handleCloneTree}
