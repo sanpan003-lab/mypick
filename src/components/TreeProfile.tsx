@@ -8,6 +8,7 @@ import { PhotoGallery } from './PhotoGallery';
 import { NewNoteModal, NoteImage } from './MyNotes';
 import { publishTree, unpublishTree } from '../services/communityPins';
 import type { TreeDetails } from '../types/trees';
+import { GoogleGenAI } from '@google/genai';
 
 interface TreeProfileProps {
   pin: Pin;
@@ -160,6 +161,49 @@ export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTre
   const [isCloning, setIsCloning] = useState(false);
   const [cloneSuccess, setCloneSuccess] = useState(false);
   const cameraInputRef = useRef<HTMLInputElement>(null);
+  const [isAiLoading, setIsAiLoading] = useState(false);
+
+  const handleAiLookup = async () => {
+    const name = editedPin.details.commonName?.trim();
+    if (!name) return;
+    setIsAiLoading(true);
+    try {
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.0-flash',
+        contents: `You are a botanical expert. Given the common name "${name}", return ONLY a JSON object with these fields:
+{
+  "scientificName": "...",
+  "description": "2-3 sentence botanical description",
+  "tasteDescription": "...",
+  "texture": "...",
+  "climateConditions": "...",
+  "growingTips": "...",
+  "healthBenefits": ["...", "...", "..."]
+}
+Return only valid JSON, no markdown, no explanation.`,
+      });
+      const raw = response.text?.replace(/\`\`\`json|\`\`\`/g, '').trim() || '';
+      const data = JSON.parse(raw);
+      setEditedPin(prev => ({
+        ...prev,
+        details: {
+          ...prev.details,
+          scientificName: data.scientificName || prev.details.scientificName,
+          description: data.description || prev.details.description,
+          tasteDescription: data.tasteDescription || prev.details.tasteDescription,
+          texture: data.texture || prev.details.texture,
+          climateConditions: data.climateConditions || prev.details.climateConditions,
+          growingTips: data.growingTips || prev.details.growingTips,
+          healthBenefits: data.healthBenefits || prev.details.healthBenefits,
+        },
+      }));
+    } catch (err) {
+      console.error('[AI Lookup] failed:', err);
+    } finally {
+      setIsAiLoading(false);
+    }
+  };
 
   const isOwner = currentPin.uid === currentUserId;
 
@@ -335,6 +379,16 @@ export function TreeProfile({ pin, onClose, onViewOnMap, onDeleteTree, onEditTre
                   <label className="block text-xs font-bold text-[#8b6b55] uppercase tracking-widest mb-2">Scientific Name</label>
                   <input type="text" value={editedPin.details.scientificName || ''} onChange={e => setEditedPin({ ...editedPin, details: { ...editedPin.details, scientificName: e.target.value } })} className="w-full bg-[#fdfbf7] border border-[#e8e4d9] rounded-xl px-4 py-3 text-[#0a3610] focus:outline-none focus:border-[#8b6b55] transition-colors" />
                 </div>
+                <button
+                  type="button"
+                  onClick={handleAiLookup}
+                  disabled={isAiLoading || !editedPin.details.commonName?.trim()}
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-amber-50 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-widest hover:bg-amber-100 transition-colors active:scale-95 disabled:opacity-50"
+                >
+                  {isAiLoading
+                    ? <><span className="w-3.5 h-3.5 border-2 border-amber-400/40 border-t-amber-600 rounded-full animate-spin" /> Looking up…</>
+                    : <><Sparkles size={14} /> AI Botanical Lookup</>}
+                </button>
                 <div>
                   <label className="block text-xs font-bold text-[#8b6b55] uppercase tracking-widest mb-2">Description</label>
                   <textarea value={editedPin.details.description || ''} onChange={e => setEditedPin({ ...editedPin, details: { ...editedPin.details, description: e.target.value } })} className="w-full bg-[#fdfbf7] border border-[#e8e4d9] rounded-xl px-4 py-3 text-[#0a3610] focus:outline-none focus:border-[#8b6b55] transition-colors min-h-[100px]" />
