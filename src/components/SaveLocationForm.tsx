@@ -143,13 +143,13 @@ export function SaveLocationForm({ lat, lng, address, onSave, onCancel }: SaveLo
         lng,
         details: {
           commonName: treeName,
-          scientificName: selectedEntry?.botanicalName,
-          description: selectedEntry?.notes,
-          tasteDescription: selectedEntry?.tasteDescription,
-          texture: selectedEntry?.texture,
-          climateConditions: selectedEntry?.climateConditions,
-          growingTips: selectedEntry?.growingTips,
-          healthBenefits: selectedEntry?.healthBenefits,
+          scientificName: selectedEntry?.botanicalName ?? aiDetails?.scientificName,
+          description: selectedEntry?.notes ?? aiDetails?.description,
+          tasteDescription: selectedEntry?.tasteDescription ?? aiDetails?.tasteDescription,
+          texture: selectedEntry?.texture ?? aiDetails?.texture,
+          climateConditions: selectedEntry?.climateConditions ?? aiDetails?.climateConditions,
+          growingTips: selectedEntry?.growingTips ?? aiDetails?.growingTips,
+          healthBenefits: selectedEntry?.healthBenefits ?? aiDetails?.healthBenefits,
           growingZone: selectedEntry?.growingZone,
           harvestWindow: selectedEntry?.harvestWindow,
           region: selectedEntry?.region,
@@ -269,9 +269,26 @@ export function SaveLocationForm({ lat, lng, address, onSave, onCancel }: SaveLo
             )}
 
             {!selectedEntry && query && (
-              <p className="text-[11px] text-gray-400 pl-1">
-                Not in the database? That's fine — your entry will be saved as typed.
-              </p>
+              <div className="space-y-2">
+                <p className="text-[11px] text-gray-400 pl-1">
+                  Not in the database? Use AI to look it up.
+                </p>
+                <button
+                  type="button"
+                  onClick={handleAiLookup}
+                  disabled={isAiLoading || !query.trim()}
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-amber-50 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-widest hover:bg-amber-100 transition-colors active:scale-95 disabled:opacity-50"
+                >
+                  {isAiLoading
+                    ? <><span className="w-3.5 h-3.5 border-2 border-amber-400/40 border-t-amber-600 rounded-full animate-spin" /> Looking up…</>
+                    : <>✨ AI Botanical Lookup</>}
+                </button>
+                {aiDetails && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-xl px-3 py-2 text-[11px] text-amber-800">
+                    ✓ AI filled in: {[aiDetails.scientificName, aiDetails.description && 'description', aiDetails.healthBenefits?.length && 'health benefits'].filter(Boolean).join(', ')}
+                  </div>
+                )}
+              </div>
             )}
           </div>
 
