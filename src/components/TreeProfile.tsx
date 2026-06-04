@@ -6,7 +6,6 @@ import { getAllPickVideos, getAllPickPhotos } from '../services/localStorageDB';
 import { MediaGallery, buildMediaItems, generateVideoThumbnail } from './PhotoGallery';
 import { PhotoGallery } from './PhotoGallery';
 import { NewNoteModal, NoteImage, JournalDetailModal } from './MyNotes';
-import { publishTree, unpublishTree } from '../services/communityPins';
 import type { TreeDetails } from '../types/trees';
 import { GoogleGenAI } from '@google/genai';
 
@@ -28,61 +27,6 @@ interface TreeProfileProps {
 
 // ─── Visibility toggle ────────────────────────────────────────────────────────
 
-function VisibilityToggle({ pin, onToggle }: { pin: Pin; onToggle: (isPublic: boolean) => void }) {
-  const [pending, setPending] = useState(false);
-  const isPublic = !!pin.isPublic;
-
-  const handleToggle = async () => {
-    if (pending) return;
-    setPending(true);
-    try {
-      const next = !isPublic;
-      if (next) {
-        await publishTree(pin);
-      } else {
-        await unpublishTree(pin.id);
-      }
-      onToggle(next);
-    } catch (err) {
-      console.error('[visibility] toggle failed:', err);
-    } finally {
-      setPending(false);
-    }
-  };
-
-  return (
-    <div className="bg-[#f4f1e8] rounded-3xl p-5 space-y-3">
-      <div className="flex items-center gap-2 text-[10px] font-bold text-[#6b4c3a] uppercase tracking-widest">
-        {isPublic ? <Globe size={13} /> : <Lock size={13} />}
-        Visibility
-      </div>
-      <button
-        type="button"
-        onClick={handleToggle}
-        disabled={pending}
-        className={`w-full flex items-center justify-between px-4 py-3 rounded-2xl border transition-all active:scale-[0.98] disabled:opacity-60 ${isPublic ? 'bg-amber-50 border-amber-300' : 'bg-white border-[#e8e4d9]'}`}
-      >
-        <div className="flex items-center gap-3">
-          <div className={`w-8 h-8 rounded-xl flex items-center justify-center transition-colors ${isPublic ? 'bg-amber-500' : 'bg-[#e8e4d9]'}`}>
-            {isPublic ? <Globe size={15} className="text-white" /> : <Lock size={15} className="text-gray-500" />}
-          </div>
-          <div className="text-left">
-            <p className={`text-sm font-semibold leading-tight ${isPublic ? 'text-amber-800' : 'text-[#0a3610]'}`}>
-              {isPublic ? 'Shared with Community' : 'Private'}
-            </p>
-            <p className="text-[11px] text-gray-400 leading-tight mt-0.5">
-              {isPublic ? 'Visible on the discovery map' : 'Only visible to you'}
-            </p>
-          </div>
-        </div>
-        {/* Toggle pill */}
-        <div className={`relative w-11 h-6 rounded-full transition-colors shrink-0 ${isPublic ? 'bg-amber-500' : 'bg-[#d1cbb8]'}`}>
-          <div className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all duration-200 ${pending ? 'opacity-50' : ''} ${isPublic ? 'left-6' : 'left-1'}`} />
-        </div>
-      </button>
-    </div>
-  );
-}
 
 // ─── Media thumbnail strip ────────────────────────────────────────────────────
 
@@ -560,9 +504,6 @@ Return only valid JSON, no markdown, no explanation.`,
               </div>
 
               {/* Visibility toggle — owners only */}
-              {isOwner && onEditTree && (
-                <VisibilityToggle pin={currentPin} onToggle={handleVisibilityToggle} />
-              )}
 
               {/* Botanical Guide */}
               <div className="space-y-4">

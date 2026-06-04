@@ -378,7 +378,7 @@ export function PickMap({
   // Build combined pin list: personal first, then community (deduplicated by id)
   const personalIds = useMemo(() => new Set(pins.map(p => p.id)), [pins]);
   const filteredCommunity = useMemo(
-    () => communityPins.filter(cp => !personalIds.has(cp.id)),
+    () => [] as Pin[], // community sharing disabled
     [communityPins, personalIds]
   );
 

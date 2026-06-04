@@ -22,7 +22,6 @@ import {
   saveNotePhoto,
 } from './services/localStorageDB';
 import { backupToDrive, restoreFromDrive, PopupBlockedError } from './services/googleDriveBackup';
-import { publishTree } from './services/communityPins';
 
 const CURRENT_USER_ID = 'local';
 
@@ -232,10 +231,6 @@ export default function App() {
       if (prev.some(p => p.id === pick.id)) return prev;
       return [...prev, pick];
     });
-    // Publish to community feed if user opted in
-    if (pick.isPublic) {
-      publishTree(pick).catch(err => console.warn('[community] publish failed:', err));
-    }
     setIsFillingDetails(false);
     setShowSuccess(true);
     setTimeout(() => {

@@ -194,7 +194,7 @@ Return only valid JSON, no markdown, no explanation.`,
         dateAdded: new Date().toISOString(),
         imageUrls: base64Photos,
         videoUrls: base64Videos,
-        isPublic,
+        isPublic: false,
       };
       onSave(newPick, base64Photos);
     } catch (err) {
@@ -407,34 +407,6 @@ Return only valid JSON, no markdown, no explanation.`,
             </p>
           </div>
 
-          {/* Community Sharing */}
-          <div className="space-y-3">
-            <h3 className="text-[10px] font-bold text-[#6b4c3a] uppercase tracking-widest">Community</h3>
-            <button
-              type="button"
-              onClick={() => setIsPublic(p => !p)}
-              className={`w-full flex items-center justify-between p-4 rounded-2xl border transition-all ${isPublic ? 'bg-amber-50 border-amber-300' : 'bg-white border-[#e8e4d9]'}`}
-            >
-              <div className="flex items-center gap-3">
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors ${isPublic ? 'bg-amber-500' : 'bg-[#f4f1e8]'}`}>
-                  <Users size={18} className={isPublic ? 'text-white' : 'text-gray-400'} />
-                </div>
-                <div className="text-left">
-                  <p className={`text-sm font-semibold ${isPublic ? 'text-amber-800' : 'text-[#0a3610]'}`}>Share with the Community</p>
-                  <p className="text-[11px] text-gray-400 leading-tight">Visible to everyone on the discovery map</p>
-                </div>
-              </div>
-              {/* Toggle switch */}
-              <div className={`relative w-12 h-6 rounded-full transition-colors shrink-0 ${isPublic ? 'bg-amber-500' : 'bg-[#e8e4d9]'}`}>
-                <div className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all duration-200 ${isPublic ? 'left-7' : 'left-1'}`} />
-              </div>
-            </button>
-            {isPublic && (
-              <p className="text-[11px] text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2 leading-relaxed">
-                Location, tree name, and notes will be visible on the public map. Photos are included if they are small enough.
-              </p>
-            )}
-          </div>
 
           {/* Submit */}
           <div className="pt-2 pb-8">
