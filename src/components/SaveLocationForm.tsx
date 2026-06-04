@@ -5,6 +5,7 @@ import { Pin } from './PickMap';
 import { ErrorModal } from './ErrorModal';
 import { BotanicalEntry } from '../types/trees';
 import { useBotanicalSearch } from '../hooks/useBotanicalSearch';
+import { GoogleGenAI } from '@google/genai';
 import { generateVideoThumbnail } from './PhotoGallery';
 
 interface SaveLocationFormProps {
@@ -45,6 +46,39 @@ export function SaveLocationForm({ lat, lng, address, onSave, onCancel }: SaveLo
 
   // Community sharing
   const [isPublic, setIsPublic] = useState(false);
+
+  const [isAiLoading, setIsAiLoading] = useState(false);
+  const [aiDetails, setAiDetails] = useState<any>(null);
+
+  const handleAiLookup = async () => {
+    const name = query.trim();
+    if (!name) return;
+    setIsAiLoading(true);
+    try {
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.0-flash',
+        contents: `You are a botanical expert. Given the common name "${name}", return ONLY a JSON object with these fields:
+{
+  "scientificName": "...",
+  "description": "2-3 sentence botanical description",
+  "tasteDescription": "...",
+  "texture": "...",
+  "climateConditions": "...",
+  "growingTips": "...",
+  "healthBenefits": ["...", "...", "..."]
+}
+Return only valid JSON, no markdown, no explanation.`,
+      });
+      const raw = response.text?.replace(/\`\`\`json|\`\`\`/g, '').trim() || '';
+      const data = JSON.parse(raw);
+      setAiDetails(data);
+    } catch (err) {
+      console.error('[AI Lookup] failed:', err);
+    } finally {
+      setIsAiLoading(false);
+    }
+  };
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const suggestions = useBotanicalSearch(query);
